@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="850" height="500" rx="16" fill="url(#bgGrad)"/>
+  
+  <!-- Header -->
+  <text x="425" y="38" fill="#ffffff" font-size="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="bold" text-anchor="middle">Top VS Code Extensions for Fast HTML Development</text>
+  <text x="425" y="62" fill="#94a3b8" font-size="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" text-anchor="middle">បញ្ជី Extensions ពេញនិយមបំផុតជួយឱ្យការសរសេរកូដ HTML លឿន ស្អាត និងមានប្រសិទ្ធភាពខ្ពស់</text>
+
+  <!-- Grid of 6 Extensions (2 Rows x 3 Cols) -->
+
+  <!-- Row 1, Col 1: Live Server -->
+  <g transform="translate(40, 85)" filter="url(#shadow)">
+    <rect width="240" height="180" rx="10" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect width="240" height="34" rx="10" fill="#1e3a8a"/>
+    <text x="12" y="22" fill="#60a5fa" font-size="13" font-family="sans-serif" font-weight="bold">⚡ Live Server</text>
+    
+    <text x="12" y="55" fill="#e2e8f0" font-size="11" font-family="sans-serif">អ្នកបង្កើត: <tspan fill="#93c5fd">Ritwick Dey</tspan></text>
+    <text x="12" y="78" fill="#cbd5e1" font-size="11" font-family="sans-serif">🔄 បើក Local Server + Auto Reload</text>
+    <text x="12" y="98" fill="#cbd5e1" font-size="11" font-family="sans-serif">Save ភ្លាម Browser Refresh ភ្លែត</text>
+
+    <rect x="12" y="125" width="216" height="40" rx="6" fill="#0f172a" stroke="#1d4ed8" stroke-width="1"/>
+    <text x="120" y="150" fill="#93c5fd" font-size="11" font-family="monospace" text-anchor="middle">Right-click &gt; Open with Live Server</text>
+  </g>
+
+  <!-- Row 1, Col 2: Material Icon Theme -->
+  <g transform="translate(305, 85)" filter="url(#shadow)">
+    <rect width="240" height="180" rx="10" fill="url(#cardGrad)" stroke="#06b6d4" stroke-width="1.5"/>
+    <rect width="240" height="34" rx="10" fill="#0e7490"/>
+    <text x="12" y="22" fill="#a5f3fc" font-size="13" font-family="sans-serif" font-weight="bold">🎨 Material Icon Theme</text>
+    
+    <text x="12" y="55" fill="#e2e8f0" font-size="11" font-family="sans-serif">អ្នកបង្កើត: <tspan fill="#67e8f9">Philipp Kief</tspan></text>
+    <text x="12" y="78" fill="#cbd5e1" font-size="11" font-family="sans-serif">📁 បង្ហាញ Icon ស្រស់ស្អាតលើ File</text>
+    <text x="12" y="98" fill="#cbd5e1" font-size="11" font-family="sans-serif">ងាយស្រួលមើលសម្គាល់ប្រភេទ File</text>
+
+    <rect x="12" y="125" width="216" height="40" rx="6" fill="#0f172a" stroke="#0891b2" stroke-width="1"/>
+    <text x="120" y="150" fill="#67e8f9" font-size="11" font-family="sans-serif" text-anchor="middle">📄 HTML5 🎨 CSS3 ⚡ JS Icons</text>
+  </g>
+
+  <!-- Row 1, Col 3: Auto Rename Tag -->
+  <g transform="translate(570, 85)" filter="url(#shadow)">
+    <rect width="240" height="180" rx="10" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1.5"/>
+    <rect width="240" height="34" rx="10" fill="#065f46"/>
+    <text x="12" y="22" fill="#a7f3d0" font-size="13" font-family="sans-serif" font-weight="bold">🏷️ Auto Rename Tag</text>
+    
+    <text x="12" y="55" fill="#e2e8f0" font-size="11" font-family="sans-serif">អ្នកបង្កើត: <tspan fill="#34d399">Jun Han</tspan></text>
+    <text x="12" y="78" fill="#cbd5e1" font-size="11" font-family="sans-serif">🔄 ប្តូរ Start Tag នោះ End Tag</text>
+    <text x="12" y="98" fill="#cbd5e1" font-size="11" font-family="sans-serif">នឹងផ្លាស់ប្តូរតាមដោយស្វ័យប្រវត្តិ</text>
+
+    <rect x="12" y="125" width="216" height="40" rx="6" fill="#0f172a" stroke="#059669" stroke-width="1"/>
+    <text x="120" y="150" fill="#6ee7b7" font-size="11" font-family="monospace" text-anchor="middle">&lt;h1&gt; ➔ &lt;h2&gt; (Sync Rename)</text>
+  </g>
+
+  <!-- Row 2, Col 1: Prettier - Code Formatter -->
+  <g transform="translate(40, 285)" filter="url(#shadow)">
+    <rect width="240" height="180" rx="10" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect width="240" height="34" rx="10" fill="#92400e"/>
+    <text x="12" y="22" fill="#fde68a" font-size="13" font-family="sans-serif" font-weight="bold">✨ Prettier Formatter</text>
+    
+    <text x="12" y="55" fill="#e2e8f0" font-size="11" font-family="sans-serif">អ្នកបង្កើត: <tspan fill="#fbbf24">Prettier</tspan></text>
+    <text x="12" y="78" fill="#cbd5e1" font-size="11" font-family="sans-serif">📐 តម្រឹមកូដ និង Indentation (Tab)</text>
+    <text x="12" y="98" fill="#cbd5e1" font-size="11" font-family="sans-serif">Format ស្វ័យប្រវត្តពេលចុច Save</text>
+
+    <rect x="12" y="125" width="216" height="40" rx="6" fill="#0f172a" stroke="#b45309" stroke-width="1"/>
+    <text x="120" y="150" fill="#fde68a" font-size="11" font-family="monospace" text-anchor="middle">Shift + Option/Alt + F</text>
+  </g>
+
+  <!-- Row 2, Col 2: Auto Close Tag -->
+  <g transform="translate(305, 285)" filter="url(#shadow)">
+    <rect width="240" height="180" rx="10" fill="url(#cardGrad)" stroke="#8b5cf6" stroke-width="1.5"/>
+    <rect width="240" height="34" rx="10" fill="#5b21b6"/>
+    <text x="12" y="22" fill="#ddd6fe" font-size="13" font-family="sans-serif" font-weight="bold">🔒 Auto Close Tag</text>
+    
+    <text x="12" y="55" fill="#e2e8f0" font-size="11" font-family="sans-serif">អ្នកបង្កើត: <tspan fill="#c084fc">Jun Han</tspan></text>
+    <text x="12" y="78" fill="#cbd5e1" font-size="11" font-family="sans-serif">✍️ បញ្ចប់ Closing Tag ស្វ័យប្រវត្តិ</text>
+    <text x="12" y="98" fill="#cbd5e1" font-size="11" font-family="sans-serif">ពេលវាយ &lt;div&gt; វានឹងថែម &lt;/div&gt; ភ្លាម</text>
+
+    <rect x="12" y="125" width="216" height="40" rx="6" fill="#0f172a" stroke="#7c3aed" stroke-width="1"/>
+    <text x="120" y="150" fill="#c084fc" font-size="11" font-family="monospace" text-anchor="middle">&lt;div&gt; ➔ &lt;div&gt;&lt;/div&gt;</text>
+  </g>
+
+  <!-- Row 2, Col 3: HTML CSS Support & Emmet -->
+  <g transform="translate(570, 285)" filter="url(#shadow)">
+    <rect width="240" height="180" rx="10" fill="url(#cardGrad)" stroke="#ec4899" stroke-width="1.5"/>
+    <rect width="240" height="34" rx="10" fill="#9d174d"/>
+    <text x="12" y="22" fill="#fbcfe8" font-size="13" font-family="sans-serif" font-weight="bold">🚀 Emmet &amp; CSS Support</text>
+    
+    <text x="12" y="55" fill="#e2e8f0" font-size="11" font-family="sans-serif">បច្ចេកវិទ្យា: <tspan fill="#f472b6">Built-in Emmet</tspan></text>
+    <text x="12" y="78" fill="#cbd5e1" font-size="11" font-family="sans-serif">⚡ បង្កើត HTML Boilerplate ដោយ</text>
+    <text x="12" y="98" fill="#cbd5e1" font-size="11" font-family="sans-serif">គ្រាន់តែវាយ <tspan fill="#f472b6" font-weight="bold">!</tspan> រួចចុច <tspan fill="#f472b6" font-weight="bold">Tab / Enter</tspan></text>
+
+    <rect x="12" y="125" width="216" height="40" rx="6" fill="#0f172a" stroke="#db2777" stroke-width="1"/>
+    <text x="120" y="150" fill="#f472b6" font-size="11" font-family="monospace" text-anchor="middle">! + Tab (Instant HTML5 Skeleton)</text>
+  </g>
+</svg>
