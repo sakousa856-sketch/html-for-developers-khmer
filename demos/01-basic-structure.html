@@ -2,79 +2,43 @@
 <html lang="km">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>កូដគំរូ 01: រចនាសម្ព័ន្ធមូលដ្ឋាននៃ HTML (Basic HTML Structure)</title>
-  <style>
-    body {
-      font-family: 'Kantumruy Pro', 'Inter', system-ui, -apple-system, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #f8fafc;
-      color: #1e293b;
-    }
-    .card {
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-      border: 1px solid #e2e8f0;
-    }
-    h1 { color: #0284c7; margin-top: 0; }
-    h2 { color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; }
-    code {
-      background: #f1f5f9;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-family: monospace;
-      color: #e11d48;
-    }
-    .note {
-      background-color: #eff6ff;
-      border-left: 4px solid #3b82f6;
-      padding: 12px 16px;
-      margin: 16px 0;
-      border-radius: 0 8px 8px 0;
-    }
-  </style>
 </head>
 <body>
 
-  <div class="card">
-    <!-- ចំណងជើងមេរៀន (Heading 1) -->
-    <h1>🌐 មេរៀនទី ០១ - ០៤៖ រចនាសម្ព័ន្ធមូលដ្ឋាន (Basic Structure)</h1>
-    <p>នេះគឺជាឯកសារ HTML ស្តង់ដារពេញលេញមួយ ដែល Browser អាចយល់ និងបង្ហាញបានយ៉ាងត្រឹមត្រូវ។</p>
+  <!-- ចំណងជើងមេរៀន (Heading 1) -->
+  <h1>🌐 មេរៀនទី ០១ - ០៤៖ រចនាសម្ព័ន្ធមូលដ្ឋាន (Basic Structure)</h1>
+  <p>នេះគឺជាឯកសារ HTML ស្តង់ដារពេញលេញមួយ ដែល Browser អាចយល់ និងបង្ហាញបានយ៉ាងត្រឹមត្រូវ។</p>
 
-    <div class="note">
-      💡 <b>ចំណាំសម្រាប់សិស្ស៖</b> រាល់ឯកសារ HTML ត្រូវតែចាប់ផ្តើមដោយ <code>&lt;!DOCTYPE html&gt;</code> ដើម្បីប្រាប់ Browser ថាឯកសារនេះប្រើប្រាស់ស្តង់ដារ <b>HTML5</b>។
-    </div>
+  <hr>
 
-    <!-- ផ្នែកពន្យល់ធាតុ (Elements Breakdown) -->
-    <h2>១. ធាតុសំខាន់ៗក្នុងឯកសារនេះ (Core Elements)</h2>
-    <ul>
-      <li><code>&lt;!DOCTYPE html&gt;</code>: ប្រកាសប្រាប់ Browser ពី Document Type (HTML5)</li>
-      <li><code>&lt;html lang="km"&gt;</code>: Root Element ដែលក្តោបមាតិកាគេហទំព័រទាំងអស់</li>
-      <li><code>&lt;head&gt;</code>: ផ្ទុកទិន្នន័យសម្គាល់ (Metadata) ដូចជា Title, Charset, Viewport និង CSS Styles</li>
-      <li><code>&lt;body&gt;</code>: ផ្ទុកមាតិកាទាំងអស់ដែលត្រូវបង្ហាញលើអេក្រង់ Browser របស់អ្នកប្រើប្រាស់</li>
-    </ul>
+  <p>
+    💡 <b>ចំណាំសម្រាប់សិស្ស៖</b> រាល់ឯកសារ HTML ត្រូវតែចាប់ផ្តើមដោយ <code>&lt;!DOCTYPE html&gt;</code> ដើម្បីប្រាប់ Browser ថាឯកសារនេះប្រើប្រាស់ស្តង់ដារ <b>HTML5</b>។
+  </p>
 
-    <h2>២. ការបង្ហាញកថាខណ្ឌ និងបន្ទាត់ផ្តេក (Paragraph & Horizontal Rule)</h2>
-    <p>
-      កថាខណ្ឌត្រូវបានបង្កើតឡើងដោយប្រើ Tag <code>&lt;p&gt;</code>។<br>
-      យើងអាចប្រើ Tag <code>&lt;br&gt;</code> ដើម្បីចុះបន្ទាត់ថ្មីដោយមិនចាំបាច់បង្កើតកថាខណ្ឌថ្មី។
-    </p>
+  <!-- ផ្នែកពន្យល់ធាតុ (Elements Breakdown) -->
+  <h2>១. ធាតុសំខាន់ៗក្នុងឯកសារនេះ (Core Elements)</h2>
+  <ul>
+    <li><code>&lt;!DOCTYPE html&gt;</code>: ប្រកាសប្រាប់ Browser ពី Document Type (HTML5)</li>
+    <li><code>&lt;html lang="km"&gt;</code>: Root Element ដែលក្តោបមាតិកាគេហទំព័រទាំងអស់</li>
+    <li><code>&lt;head&gt;</code>: ផ្ទុកទិន្នន័យសម្គាល់ (Metadata) ដូចជា Title, Charset, Viewport</li>
+    <li><code>&lt;body&gt;</code>: ផ្ទុកមាតិកាទាំងអស់ដែលត្រូវបង្ហាញលើអេក្រង់ Browser របស់អ្នកប្រើប្រាស់</li>
+  </ul>
 
-    <!-- បន្ទាត់ផ្តេកខណ្ឌចែកមាតិកា -->
-    <hr style="border: none; border-top: 1px dashed #cbd5e1; margin: 24px 0;">
+  <h2>២. ការបង្ហាញកថាខណ្ឌ និងបន្ទាត់ផ្តេក (Paragraph &amp; Line Break)</h2>
+  <p>
+    កថាខណ្ឌត្រូវបានបង្កើតឡើងដោយប្រើ Tag <code>&lt;p&gt;</code>។<br>
+    យើងអាចប្រើ Tag <code>&lt;br&gt;</code> ដើម្បីចុះបន្ទាត់ថ្មីដោយមិនចាំបាច់បង្កើតកថាខណ្ឌថ្មី។
+  </p>
 
-    <h2>៣. ប៊ូតុងសាកល្បង (Interactive Button)</h2>
-    <p>ចុចប៊ូតុងខាងក្រោមដើម្បីសាកល្បង JavaScript សាមញ្ញ៖</p>
-    <button onclick="alert('សួស្តី! អ្នកបានរៀនចេះរចនាសម្ព័ន្ធ HTML5 ហើយ!')" 
-            style="background: #0284c7; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 16px;">
-      ចុចទីនេះ (Click Me)
-    </button>
-  </div>
+  <!-- បន្ទាត់ផ្តេកខណ្ឌចែកមាតិកា -->
+  <hr>
+
+  <h2>៣. ប៊ូតុងសាកល្បង (Interactive Button)</h2>
+  <p>ចុចប៊ូតុងខាងក្រោមដើម្បីសាកល្បង Interaction សាមញ្ញ៖</p>
+  <button onclick="alert('សួស្តី! អ្នកបានរៀនចេះរចនាសម្ព័ន្ធ HTML5 ហើយ!')">
+    ចុចទីនេះ (Click Me)
+  </button>
 
 </body>
 </html>

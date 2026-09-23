@@ -2,122 +2,63 @@
 <html lang="km">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>កូដគំរូ 03: រូបភាព និងប្រព័ន្ធផ្សព្វផ្សាយ (Images & Media)</title>
-  <style>
-    body {
-      font-family: 'Kantumruy Pro', 'Inter', system-ui, sans-serif;
-      line-height: 1.6;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #f8fafc;
-      color: #1e293b;
-    }
-    .card {
-      background: white;
-      padding: 32px;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-      margin-bottom: 24px;
-    }
-    h1 { color: #7c3aed; }
-    h2 { color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; }
-    .media-box {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      align-items: center;
-      margin: 16px 0;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    figure {
-      margin: 0;
-      text-align: center;
-      background: #f1f5f9;
-      padding: 12px;
-      border-radius: 8px;
-    }
-    figcaption {
-      font-size: 14px;
-      color: #64748b;
-      margin-top: 6px;
-    }
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      border-radius: 8px;
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-  </style>
 </head>
 <body>
 
-  <div class="card">
-    <h1>🖼️ រូបភាព និងប្រព័ន្ធផ្សព្វផ្សាយ (Images, Audio, Video & Iframes)</h1>
-    <p>មេរៀននេះបង្ហាញពីការដាក់បញ្ចូលរូបភាព (Image), សំឡេង (Audio), វីដេអូ (Video) និងការបង្កប់ YouTube/Maps តាមរយៈ Iframe។</p>
+  <h1>រូបភាព និងប្រព័ន្ធផ្សព្វផ្សាយ (Images, Audio, Video &amp; Iframes)</h1>
+  <p>មេរៀននេះបង្ហាញពីការដាក់បញ្ចូលរូបភាព (Image), សំឡេង (Audio), វីដេអូ (Video) និងការបង្កប់ YouTube តាមរយៈ Iframe ដោយប្រើ HTML Tags សុទ្ធ។</p>
+  <hr>
 
-    <!-- ១. រូបភាព HTML -->
-    <h2>១. ការប្រើប្រាស់រូបភាព (HTML Images)</h2>
-    <div class="media-box">
-      <figure>
-        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&q=80" 
-             alt="Laptop displaying code on a desk" 
-             width="360" 
-             height="240">
-        <figcaption>រូបភាពកុំព្យូទ័រសរសេរកូដ (មានកំណត់ <code>alt</code> និង <code>width/height</code>)</figcaption>
-      </figure>
+  <!-- ១. រូបភាព HTML -->
+  <h2>១. ការប្រើប្រាស់រូបភាព (HTML Images)</h2>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&q=80" 
+         alt="រូបភាពកុំព្យូទ័រសរសេរកូដ" 
+         width="360" 
+         height="240">
+    <figcaption>រូបភាពកុំព្យូទ័រសរសេរកូដ (មានកំណត់ <code>alt</code> និង <code>width/height</code>)</figcaption>
+  </figure>
 
-      <div style="flex: 1; min-width: 250px;">
-        <p><b>ចំណុចសំខាន់នៃ Tag <code>&lt;img&gt;</code>:</b></p>
-        <ul>
-          <li><code>src</code> (Source): ទីតាំង URL ឬផ្លូវនៃ file រូបភាព</li>
-          <li><code>alt</code> (Alternative Text): អត្ថបទពិពណ៌នារូបភាព (សំខាន់សម្រាប់ SEO និង Screen Readers)</li>
-          <li><code>loading="lazy"</code>: ជួយឱ្យ Web ដំណើរការលឿន ដោយទាញយករូបភាពនៅពេល scroll មកដល់</li>
-        </ul>
-      </div>
-    </div>
+  <p><b>ចំណុចសំខាន់នៃ Tag <code>&lt;img&gt;</code>:</b></p>
+  <ul>
+    <li><code>src</code> (Source): ទីតាំង URL ឬផ្លូវនៃ file រូបភាព</li>
+    <li><code>alt</code> (Alternative Text): អត្ថបទពិពណ៌នារូបភាព (សំខាន់សម្រាប់ SEO និង Screen Readers)</li>
+    <li><code>width</code> និង <code>height</code>: កំណត់ទំហំទទឹង និងកម្ពស់គិតជា Pixel</li>
+  </ul>
 
-    <!-- ២. សំឡេង HTML Audio -->
-    <h2>២. ការចាក់សំឡេង (HTML Audio Player)</h2>
-    <p>ប្រើប្រាស់ Tag <code>&lt;audio controls&gt;</code> ជាមួយ <code>&lt;source&gt;</code>៖</p>
-    <audio controls style="width: 100%; max-width: 500px;">
-      <source src="https://actions.google.com/sounds/v1/water/waves_crashing_on_rock_beach.ogg" type="audio/ogg">
-      Browser របស់អ្នកមិនគាំទ្រ Audio element ទេ។
-    </audio>
+  <hr>
 
-    <!-- ៣. វីដេអូ HTML Video -->
-    <h2>៣. វីដេអូក្នុង HTML (HTML Video Player)</h2>
-    <video width="100%" height="auto" controls poster="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80" style="max-width: 600px; border-radius: 8px;">
-      <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
-      Browser របស់អ្នកមិនគាំទ្រ Video element ទេ។
-    </video>
+  <!-- ២. សំឡេង HTML Audio -->
+  <h2>២. ការចាក់សំឡេង (HTML Audio Player)</h2>
+  <p>ប្រើប្រាស់ Tag <code>&lt;audio controls&gt;</code> ជាមួយ <code>&lt;source&gt;</code>៖</p>
+  <audio controls>
+    <source src="https://actions.google.com/sounds/v1/water/waves_crashing_on_rock_beach.ogg" type="audio/ogg">
+    Browser របស់អ្នកមិនគាំទ្រ Audio element ទេ។
+  </audio>
 
-    <!-- ៤. ការបង្កប់ Iframe -->
-    <h2>៤. ការបង្កប់វីដេអូ YouTube និង Maps តាម Iframe (YouTube & Map Embed)</h2>
-    <p>ការបង្កប់វីដេអូ YouTube ដោយប្រើ <code>&lt;iframe&gt;</code>៖</p>
-    <div class="video-container" style="max-width: 640px;">
-      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-      </iframe>
-    </div>
-  </div>
+  <hr>
+
+  <!-- ៣. វីដេអូ HTML Video -->
+  <h2>៣. វីដេអូក្នុង HTML (HTML Video Player)</h2>
+  <p>ប្រើប្រាស់ Tag <code>&lt;video controls&gt;</code>៖</p>
+  <video width="480" height="270" controls poster="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80">
+    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+    Browser របស់អ្នកមិនគាំទ្រ Video element ទេ។
+  </video>
+
+  <hr>
+
+  <!-- ៤. ការបង្កប់ Iframe -->
+  <h2>៤. ការបង្កប់វីដេអូ YouTube តាម Iframe (YouTube Embed)</h2>
+  <p>ការបង្កប់វីដេអូ YouTube ដោយប្រើ <code>&lt;iframe&gt;</code>៖</p>
+  <iframe width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+  </iframe>
 
 </body>
 </html>

@@ -2,149 +2,81 @@
 <html lang="km">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>កូដគំរូ 06: ប្លង់គេហទំព័រ Semantic Layout</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Kantumruy Pro', 'Inter', system-ui, sans-serif;
-      line-height: 1.6;
-      background: #f1f5f9;
-      color: #334155;
-    }
-    .wrapper {
-      max-width: 1000px;
-      margin: 20px auto;
-      background: white;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-    }
-    header {
-      background: #0f172a;
-      color: white;
-      padding: 24px;
-      text-align: center;
-    }
-    nav {
-      background: #0284c7;
-      padding: 12px 24px;
-    }
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 20px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    nav a:hover { text-decoration: underline; }
-    .main-container {
-      display: grid;
-      grid-template-columns: 2.5fr 1fr;
-      gap: 24px;
-      padding: 24px;
-    }
-    article {
-      background: #fafafa;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      border: 1px solid #e2e8f0;
-    }
-    article h2 { color: #0f172a; margin-bottom: 8px; }
-    aside {
-      background: #f8fafc;
-      padding: 20px;
-      border-radius: 8px;
-      border: 1px solid #e2e8f0;
-      height: fit-content;
-    }
-    aside h3 { color: #0369a1; margin-bottom: 12px; }
-    footer {
-      background: #0f172a;
-      color: #94a3b8;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-    @media (max-width: 768px) {
-      .main-container { grid-template-columns: 1fr; }
-      nav ul { flex-direction: column; gap: 8px; }
-    }
-  </style>
+  <title>កូដគំរូ 06: ប្លង់គេហទំព័រ Semantic Layout (HTML5 Semantic Structure)</title>
 </head>
 <body>
 
-  <div class="wrapper">
-    <!-- Header Semantic Element -->
-    <header>
-      <h1>📰 ប្លង់គេហទំព័រស្តង់ដារ (HTML5 Semantic Web Layout)</h1>
-      <p>ការសាងសង់រចនាសម្ព័ន្ធគេហទំព័រដោយប្រើ Semantic Elements ស្តង់ដារ W3C</p>
-    </header>
+  <!-- Header Semantic Element -->
+  <header>
+    <h1> ប្លង់គេហទំព័រស្តង់ដារ (HTML5 Semantic Web Layout)</h1>
+    <p>ការសាងសង់រចនាសម្ព័ន្ធគេហទំព័រដោយប្រើ Semantic Elements ស្តង់ដារ W3C ដោយគ្មាន CSS</p>
+  </header>
+  <hr>
 
-    <!-- Navigation Semantic Element -->
-    <nav>
-      <ul>
-        <li><a href="#home">🏠 ទំព័រដើម (Home)</a></li>
-        <li><a href="#articles">📚 អត្ថបទ (Articles)</a></li>
-        <li><a href="#tutorials">💻 មេរៀន (Tutorials)</a></li>
-        <li><a href="#about">ℹ️ អំពីយើង (About)</a></li>
-      </ul>
-    </nav>
+  <!-- Navigation Semantic Element -->
+  <nav>
+    <b>ម៉ឺនុយរុករក (Navigation):</b>
+    <ul>
+      <li><a href="#home">ទំព័រដើម (Home)</a></li>
+      <li><a href="#articles">អត្ថបទ (Articles)</a></li>
+      <li><a href="#tutorials">មេរៀន (Tutorials)</a></li>
+      <li><a href="#about">អំពីយើង (About)</a></li>
+    </ul>
+  </nav>
+  <hr>
 
-    <!-- Main Container -->
-    <div class="main-container">
+  <!-- Main Content Area -->
+  <main>
+    <section id="articles">
+      <h2> ផ្នែកអត្ថបទសំខាន់ៗ (Main Articles Section)</h2>
       
-      <!-- Main Content Area -->
-      <main>
-        <section id="articles">
-          
-          <article>
-            <header>
-              <h2>ហេតុអ្វីបានជាត្រូវប្រើប្រាស់ Semantic HTML?</h2>
-              <p style="font-size: 13px; color: #64748b;">ចុះផ្សាយនៅថ្ងៃទី ២៣ ខែកញ្ញា ឆ្នាំ ២០២៦ | ដោយ៖ លោកគ្រូបង្រៀន Web</p>
-            </header>
-            <p style="margin-top: 10px;">
-              Semantic Elements ដូចជា <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code> និង <code>&lt;footer&gt;</code> ជួយឱ្យ Search Engine (Google SEO) និង Screen Readers យល់ពីអត្ថន័យនៃផ្នែកនីមួយៗក្នុងទំព័របានយ៉ាងច្បាស់លាស់។
-            </p>
-          </article>
+      <!-- Article 1 -->
+      <article>
+        <header>
+          <h3>ហេតុអ្វីបានជាត្រូវប្រើប្រាស់ Semantic HTML?</h3>
+          <p><small>ចុះផ្សាយនៅថ្ងៃទី ២៣ ខែកញ្ញា ឆ្នាំ ២០២៦ | ដោយ៖ លោកគ្រូបង្រៀន Web</small></p>
+        </header>
+        <p>
+          Semantic Elements ដូចជា <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code> និង <code>&lt;footer&gt;</code> ជួយឱ្យ Search Engine (Google SEO) និង Screen Readers យល់ពីអត្ថន័យនៃផ្នែកនីមួយៗក្នុងទំព័របានយ៉ាងច្បាស់លាស់។
+        </p>
+      </article>
 
-          <article>
-            <header>
-              <h2>គន្លឹះក្នុងការបង្កើត Responsive Web Layout</h2>
-              <p style="font-size: 13px; color: #64748b;">ចុះផ្សាយនៅថ្ងៃទី ២២ ខែកញ្ញា ឆ្នាំ ២០២៦</p>
-            </header>
-            <p style="margin-top: 10px;">
-              ដើម្បីឱ្យគេហទំព័រមើលទៅស្អាតទាំងលើទូរស័ព្ទដៃ Tablet និងកុំព្យូទ័រ យើងត្រូវកំណត់ <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> នៅក្នុង Tag <code>&lt;head&gt;</code>។
-            </p>
-          </article>
+      <hr>
 
-        </section>
-      </main>
+      <!-- Article 2 -->
+      <article>
+        <header>
+          <h3>គន្លឹះក្នុងការបង្កើត Responsive Web Layout</h3>
+          <p><small>ចុះផ្សាយនៅថ្ងៃទី ២២ ខែកញ្ញា ឆ្នាំ ២០២៦</small></p>
+        </header>
+        <p>
+          ដើម្បីឱ្យគេហទំព័រមើលទៅស្អាតទាំងលើទូរស័ព្ទដៃ Tablet និងកុំព្យូទ័រ យើងត្រូវកំណត់ <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> នៅក្នុង Tag <code>&lt;head&gt;</code>។
+        </p>
+      </article>
 
-      <!-- Sidebar / Aside Semantic Element -->
-      <aside>
-        <h3>📌 ព័ត៌មានបន្ថែម (Sidebar)</h3>
-        <p>នេះគឺជាផ្នែក <code>&lt;aside&gt;</code> ដែលប្រើប្រាស់សម្រាប់ដាក់ Widget, ព័ត៌មានទាក់ទង, ឬ Profile អ្នកនិពន្ធ។</p>
-        <hr style="margin: 16px 0; border: none; border-top: 1px solid #e2e8f0;">
-        <h4>🔗 តំណភ្ជាប់សំខាន់ៗ៖</h4>
-        <ul style="margin-left: 20px; margin-top: 8px;">
-          <li><a href="#">កូដគំរូ HTML5</a></li>
-          <li><a href="#">ឯកសារបច្ចេកទេស Web Docs</a></li>
-          <li><a href="#">សហគមន៍សិស្ស</a></li>
-        </ul>
-      </aside>
+    </section>
+  </main>
 
-    </div>
+  <hr>
 
-    <!-- Footer Semantic Element -->
-    <footer>
-      <p>&copy; 2026 រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ ថ្នាក់រៀន Web Development កម្ពុជា។</p>
-    </footer>
-  </div>
+  <!-- Sidebar / Aside Semantic Element -->
+  <aside>
+    <h3>📌 ព័ត៌មានបន្ថែមចំហៀង (Sidebar - Aside)</h3>
+    <p>នេះគឺជាផ្នែក <code>&lt;aside&gt;</code> ដែលប្រើប្រាស់សម្រាប់ដាក់ Widget, ព័ត៌មានទាក់ទង, ឬ Profile អ្នកនិពន្ធ។</p>
+    <h4>🔗 តំណភ្ជាប់សំខាន់ៗ៖</h4>
+    <ul>
+      <li><a href="#">កូដគំរូ HTML5</a></li>
+      <li><a href="#">ឯកសារបច្ចេកទេស Web Docs</a></li>
+      <li><a href="#">សហគមន៍សិស្ស</a></li>
+    </ul>
+  </aside>
+
+  <hr>
+
+  <!-- Footer Semantic Element -->
+  <footer>
+    <p>&copy; 2026 រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ ថ្នាក់រៀន Web Development កម្ពុជា។</p>
+  </footer>
 
 </body>
 </html>
