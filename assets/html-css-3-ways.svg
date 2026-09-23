@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 320" width="100%" height="100%">
+  <rect width="840" height="320" rx="12" fill="#0f172a" />
+  <text x="420" y="36" font-family="'Kantumruy Pro', sans-serif" font-size="18" fill="#38bdf8" text-anchor="middle" font-weight="bold">
+    🎨 វិធីទាំង ៣ ក្នុងការបញ្ចូល CSS ទៅក្នុង HTML (3 Ways of Styling)
+  </text>
+
+  <!-- Card 1: Inline CSS -->
+  <rect x="30" y="65" width="245" height="225" rx="8" fill="#1e293b" stroke="#f43f5e" stroke-width="2" />
+  <rect x="30" y="65" width="245" height="36" rx="8" fill="#f43f5e" />
+  <text x="152" y="89" font-family="'Kantumruy Pro', sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">១. Inline CSS</text>
+  <text x="45" y="125" font-family="'Fira Code', monospace" font-size="11" fill="#cbd5e1">
+    <tspan x="45" dy="0">&lt;h1 <tspan fill="#f43f5e">style="color:red;"</tspan>&gt;</tspan>
+    <tspan x="45" dy="18">  ចំណងជើង</tspan>
+    <tspan x="45" dy="18">&lt;/h1&gt;</tspan>
+  </text>
+  <rect x="45" y="195" width="215" height="80" rx="6" fill="#0f172a" />
+  <text x="55" y="215" font-family="'Kantumruy Pro', sans-serif" font-size="11" fill="#94a3b8">
+    <tspan x="55" dy="0">• សរសេរក្នុង attribute <tspan fill="#f43f5e">style</tspan></tspan>
+    <tspan x="55" dy="16">• ប្រើលើ ១ Element ប៉ុណ្ណោះ</tspan>
+    <tspan x="55" dy="16">• ពិបាកថែទាំ (Not recommended)</tspan>
+  </text>
+
+  <!-- Card 2: Internal CSS -->
+  <rect x="295" y="65" width="250" height="225" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2" />
+  <rect x="295" y="65" width="250" height="36" rx="8" fill="#f59e0b" />
+  <text x="420" y="89" font-family="'Kantumruy Pro', sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">២. Internal CSS</text>
+  <text x="310" y="125" font-family="'Fira Code', monospace" font-size="11" fill="#cbd5e1">
+    <tspan x="310" dy="0">&lt;head&gt;</tspan>
+    <tspan x="310" dy="16">  &lt;<tspan fill="#f59e0b">style</tspan>&gt;</tspan>
+    <tspan x="310" dy="16">    h1 { color: red; }</tspan>
+    <tspan x="310" dy="16">  &lt;/<tspan fill="#f59e0b">style</tspan>&gt;</tspan>
+    <tspan x="310" dy="16">&lt;/head&gt;</tspan>
+  </text>
+  <rect x="310" y="210" width="220" height="65" rx="6" fill="#0f172a" />
+  <text x="320" y="228" font-family="'Kantumruy Pro', sans-serif" font-size="11" fill="#94a3b8">
+    <tspan x="320" dy="0">• សរសេរក្នុង Tag <tspan fill="#f59e0b">&lt;style&gt;</tspan></tspan>
+    <tspan x="320" dy="16">• ប្រើសម្រាប់តែ ១ ទំព័រគត់</tspan>
+  </text>
+
+  <!-- Card 3: External CSS -->
+  <rect x="565" y="65" width="245" height="225" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2" />
+  <rect x="565" y="65" width="245" height="36" rx="8" fill="#10b981" />
+  <text x="687" y="89" font-family="'Kantumruy Pro', sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">៣. External CSS ⭐</text>
+  <text x="580" y="125" font-family="'Fira Code', monospace" font-size="11" fill="#cbd5e1">
+    <tspan x="580" dy="0">&lt;head&gt;</tspan>
+    <tspan x="580" dy="16">  &lt;<tspan fill="#10b981">link</tspan> rel="stylesheet"</tspan>
+    <tspan x="580" dy="16">        href="<tspan fill="#10b981">style.css</tspan>"&gt;</tspan>
+    <tspan x="580" dy="16">&lt;/head&gt;</tspan>
+  </text>
+  <rect x="580" y="210" width="215" height="65" rx="6" fill="#0f172a" />
+  <text x="590" y="228" font-family="'Kantumruy Pro', sans-serif" font-size="11" fill="#94a3b8">
+    <tspan x="590" dy="0">• ភ្ជាប់ File <tspan fill="#10b981">.css</tspan> ដាច់ដោយឡែក</tspan>
+    <tspan x="590" dy="16">• ស្តង់ដារល្អបំផុត (Best Practice)</tspan>
+  </text>
+</svg>

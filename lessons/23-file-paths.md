@@ -13,6 +13,8 @@
 
 ## ២. ឧទាហរណ៍ និងរបៀបប្រើ Relative File Paths
 
+![HTML File Paths and Directory Tree](../assets/html-file-paths-tree.svg)
+
 | Syntax | ការពន្យល់ (Meaning) | ឧទាហរណ៍ (Example) |
 | :--- | :--- | :--- |
 | `picture.jpg` | ឯកសារស្ថិតក្នុង **Folder តែមួយ** ជាមួយ HTML File | `<img src="picture.jpg">` |

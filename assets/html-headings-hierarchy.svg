@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="100%" height="100%">
+  <rect width="800" height="360" rx="12" fill="#0f172a" />
+  <text x="400" y="35" font-family="'Kantumruy Pro', sans-serif" font-size="18" fill="#38bdf8" text-anchor="middle" font-weight="bold">
+    📊 ឋានានុក្រមនៃ HTML Headings (SEO & Document Structure)
+  </text>
+
+  <!-- H1 Box -->
+  <rect x="50" y="55" width="700" height="42" rx="6" fill="#0284c7" />
+  <text x="70" y="82" font-family="'Fira Code', monospace" font-size="18" fill="#fff" font-weight="bold">&lt;h1&gt;</text>
+  <text x="130" y="82" font-family="'Kantumruy Pro', sans-serif" font-size="15" fill="#fff" font-weight="bold">ចំណងជើងធំបំផុតនៃទំព័រ (Main Page Title - មានតែ ១ គត់ក្នុងមួយទំព័រ ⭐)</text>
+
+  <!-- H2 Box -->
+  <rect x="90" y="105" width="660" height="38" rx="6" fill="#0369a1" />
+  <text x="110" y="130" font-family="'Fira Code', monospace" font-size="16" fill="#fff" font-weight="bold">&lt;h2&gt;</text>
+  <text x="165" y="130" font-family="'Kantumruy Pro', sans-serif" font-size="14" fill="#fff">ជំពូកធំ ឬផ្នែកចម្បង (Major Section Heading)</text>
+
+  <!-- H3 Box -->
+  <rect x="130" y="150" width="620" height="35" rx="6" fill="#075985" />
+  <text x="150" y="173" font-family="'Fira Code', monospace" font-size="15" fill="#fff" font-weight="bold">&lt;h3&gt;</text>
+  <text x="200" y="173" font-family="'Kantumruy Pro', sans-serif" font-size="13" fill="#e0f2fe">ចំណងជើងរងនៃផ្នែក (Subsection Heading)</text>
+
+  <!-- H4 Box -->
+  <rect x="170" y="192" width="580" height="32" rx="6" fill="#0c4a6e" />
+  <text x="190" y="213" font-family="'Fira Code', monospace" font-size="14" fill="#bae6fd">&lt;h4&gt;</text>
+  <text x="235" y="213" font-family="'Kantumruy Pro', sans-serif" font-size="12" fill="#bae6fd">ចំណុចលម្អិតកម្រិត ៤</text>
+
+  <!-- H5 Box -->
+  <rect x="210" y="230" width="540" height="28" rx="6" fill="#1e293b" stroke="#334155" />
+  <text x="230" y="249" font-family="'Fira Code', monospace" font-size="13" fill="#94a3b8">&lt;h5&gt;</text>
+  <text x="270" y="249" font-family="'Kantumruy Pro', sans-serif" font-size="12" fill="#94a3b8">ចំណុចលម្អិតកម្រិត ៥</text>
+
+  <!-- H6 Box -->
+  <rect x="250" y="264" width="500" height="26" rx="6" fill="#1e293b" stroke="#334155" />
+  <text x="270" y="282" font-family="'Fira Code', monospace" font-size="12" fill="#64748b">&lt;h6&gt;</text>
+  <text x="305" y="282" font-family="'Kantumruy Pro', sans-serif" font-size="11" fill="#64748b">ចំណុចតូចបំផុតកម្រិត ៦</text>
+
+  <!-- Rule -->
+  <text x="400" y="330" font-family="'Kantumruy Pro', sans-serif" font-size="13" fill="#facc15" text-anchor="middle">
+    ⚠️ កុំប្រើ Headings គ្រាន់តែចង់បានអក្សរធំ! ត្រូវប្រើវាដើម្បីរៀបចំឋានានុក្រមអត្ថបទឱ្យត្រឹមត្រូវតាមស្តង់ដារ SEO។
+  </text>
+</svg>

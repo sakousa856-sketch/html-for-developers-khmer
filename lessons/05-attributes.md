@@ -6,6 +6,8 @@
 
 ## ១. ទម្រង់ទូទៅនៃ Attribute (Attribute Syntax)
 
+![HTML Attribute Anatomy](../assets/html-attributes-diagram.svg)
+
 Attributes ភាគច្រើនត្រូវបានសរសេរជាទម្រង់ **ឈ្មោះ និងតម្លៃ (name="value")**:
 
 ```html

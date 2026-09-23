@@ -6,6 +6,8 @@
 
 ## ១. រចនាសម្ព័ន្ធគ្រឹះនៃ Tag `<form>`
 
+![HTML Form Anatomy and Data Flow](../assets/html-form-anatomy.svg)
+
 ```html
 <form action="/submit-data" method="POST">
   <label for="fname">ឈ្មោះដំបូង (First Name):</label><br>

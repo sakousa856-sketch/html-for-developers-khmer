@@ -26,6 +26,32 @@
 
 ---
 
+## 🎨 រូបភាព និងដ្យាក្រាមពន្យល់ក្នុងមេរៀន (Visual Diagrams Included)
+
+កម្រងមេរៀននេះមានបង្កប់ **SVG Vector Diagrams គុណភាពខ្ពស់ (Crisp & Clear)** នៅគ្រប់មេរៀនស្នូល ដើម្បីជួយឱ្យសិស្សមើលយល់ភ្លាមៗ៖
+
+| # | រូបភាពដ្យាក្រាម (Diagram Topic) | មេរៀនដែលបានបង្កប់ (Embedded Lesson) |
+| :---: | :--- | :--- |
+| 01 | 🌳 **HTML DOM Tree Structure** | [01-introduction.md](lessons/01-introduction.md), [03-basic-structure.md](lessons/03-basic-structure.md) |
+| 02 | 🧩 **HTML Element Anatomy** (Start Tag, Content, End Tag) | [04-elements.md](lessons/04-elements.md) |
+| 03 | 🔍 **Attribute Anatomy** (`name="value"`) | [05-attributes.md](lessons/05-attributes.md) |
+| 04 | 📊 **Headings Hierarchy** (`<h1>` ដល់ `<h6>` & SEO Rule) | [06-headings.md](lessons/06-headings.md) |
+| 05 | 🎨 **3 Ways of Adding CSS** (Inline, Internal, External) | [12-css-integration.md](lessons/12-css-integration.md) |
+| 06 | 🗂️ **Table Structure, Colspan & Rowspan** | [16-tables.md](lessons/16-tables.md) |
+| 07 | 🧱 **Block vs Inline Elements Visual** | [18-block-and-inline.md](lessons/18-block-and-inline.md) |
+| 08 | 🏷️ **Class (Shared) vs ID (Unique) Visual** | [20-classes-and-id.md](lessons/20-classes-and-id.md) |
+| 09 | 🪟 **Iframe Embedding Architecture** | [21-iframes.md](lessons/21-iframes.md) |
+| 10 | 📁 **Folder Tree & File Paths** (`./`, `../`, `images/`) | [23-file-paths.md](lessons/23-file-paths.md) |
+| 11 | 📱 **Responsive Viewport on Devices** (Mobile/Tablet/Desktop) | [25-layout-and-responsive.md](lessons/25-layout-and-responsive.md) |
+| 12 | 🏗️ **HTML5 Semantic Layout** (`<header>`, `<nav>`, `<main>`, `<article>`) | [27-semantic-elements.md](lessons/27-semantic-elements.md) |
+| 13 | 📝 **HTML Form Anatomy & Client-Server Data Flow** | [31-forms-intro.md](lessons/31-forms-intro.md) |
+| 14 | 🔍 **Canvas (Raster Pixel) vs SVG (Vector Math)** | [38-svg.md](lessons/38-svg.md) |
+| 15 | 💾 **localStorage vs sessionStorage Lifecycle** | [45-web-storage-api.md](lessons/45-web-storage-api.md) |
+| 16 | ⚡ **Main UI Thread vs Background Worker Thread** | [46-web-workers-api.md](lessons/46-web-workers-api.md) |
+| 17 | 📡 **Polling vs SSE vs WebSockets Comparison** | [47-server-sent-events-api.md](lessons/47-server-sent-events-api.md) |
+
+---
+
 ## 📚 មាតិកាមេរៀនទាំងអស់ (Table of Contents - 47 Lessons)
 
 ### 🔹 Module 1: HTML Core & Structure (មូលដ្ឋានគ្រឹះ HTML)

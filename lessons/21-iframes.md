@@ -6,6 +6,8 @@
 
 ## ១. ទម្រង់សរសេរ Iframe (Iframe Syntax)
 
+![HTML Iframe Architecture](../assets/html-iframe-architecture.svg)
+
 ```html
 <iframe src="url" title="ការពិពណ៌នា" width="100%" height="400"></iframe>
 ```

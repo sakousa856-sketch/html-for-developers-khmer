@@ -6,6 +6,8 @@
 
 ## ១. កម្រិតចំណងជើងទាំង ៦ (The 6 Heading Levels)
 
+![HTML Headings Hierarchy](../assets/html-headings-hierarchy.svg)
+
 HTML មាន Tag ចំណងជើងចំនួន ៦ កម្រិត ដោយ `<h1>` ធំ និងសំខាន់បំផុត ហើយ `<h6>` តូច និងសំខាន់តិចបំផុត៖
 
 ```html

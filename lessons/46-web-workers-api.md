@@ -6,6 +6,8 @@
 
 ## ១. ហេតុអ្វីបានជាយើងត្រូវការ Web Workers?
 
+![HTML5 Web Workers Multi-Threading](../assets/html-web-workers-threads.svg)
+
 ធម្មតាកូដ JavaScript លើ Browser ដំណើរការលើ **Single Thread** (Main Thread)។ ប្រសិនបើយើងដំណើរការកូដគណនាធ្ងន់ៗ (ដូចជា ការគណនាទិន្នន័យរាប់លាន ដំណើរការរូបភាព ឬស្វែងរកលេខបឋម) នោះទំព័រ Web នឹង **កកគាំង (Freeze / Unresponsive)** មិនអាចចុចប៊ូតុង ឬ scroll បានឡើយ។
 
 **Web Worker** ដោះស្រាយបញ្ហានេះដោយផ្ទេរការគណនាធ្ងន់ៗទៅដំណើរការលើ **Background Thread**។

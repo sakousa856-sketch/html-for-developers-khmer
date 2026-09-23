@@ -28,6 +28,8 @@
 
 ## ២. តារាងប្រៀបធៀបរវាង Canvas vs SVG
 
+![HTML5 Canvas vs SVG](../assets/html-canvas-vs-svg.svg)
+
 | លក្ខណៈសម្បត្តិ | HTML5 Canvas | HTML5 SVG |
 | :--- | :--- | :--- |
 | **មូលដ្ឋានបច្ចេកវិទ្យា** | Pixel-based (Raster) | Vector-based (XML) |

@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="blockGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="inlineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="850" height="480" rx="16" fill="url(#bgGrad)"/>
+  
+  <!-- Title -->
+  <text x="425" y="42" fill="#ffffff" font-size="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="bold" text-anchor="middle">Block vs Inline Elements in HTML</text>
+  <text x="425" y="66" fill="#94a3b8" font-size="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" text-anchor="middle">ការប្រៀបធៀបចរិតលក្ខណៈរវាងធាតុ Block និង Inline</text>
+
+  <!-- Left Card: Block Elements -->
+  <g transform="translate(40, 95)" filter="url(#shadow)">
+    <rect width="365" height="350" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect x="0" y="0" width="365" height="45" rx="12" fill="#3b82f6"/>
+    <rect x="0" y="30" width="365" height="15" fill="#3b82f6"/>
+    <text x="182" y="28" fill="#ffffff" font-size="16" font-family="sans-serif" font-weight="bold" text-anchor="middle">🧱 Block-level Elements</text>
+
+    <!-- Visual Browser Canvas Simulation -->
+    <rect x="15" y="60" width="335" height="145" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    
+    <!-- Block Element 1 -->
+    <rect x="25" y="70" width="315" height="35" rx="4" fill="url(#blockGrad)"/>
+    <text x="182" y="92" fill="#ffffff" font-size="13" font-family="monospace" text-anchor="middle">&lt;div&gt; Full Width (100%) &lt;/div&gt;</text>
+
+    <!-- Block Element 2 -->
+    <rect x="25" y="112" width="315" height="35" rx="4" fill="url(#blockGrad)"/>
+    <text x="182" y="134" fill="#ffffff" font-size="13" font-family="monospace" text-anchor="middle">&lt;p&gt; ចុះបន្ទាត់ថ្មីជានិច្ច &lt;/p&gt;</text>
+
+    <!-- Block Element 3 -->
+    <rect x="25" y="154" width="315" height="35" rx="4" fill="url(#blockGrad)"/>
+    <text x="182" y="176" fill="#ffffff" font-size="13" font-family="monospace" text-anchor="middle">&lt;h1&gt; New Line Starts Here &lt;/h1&gt;</text>
+
+    <!-- Bullet points -->
+    <g transform="translate(20, 220)">
+      <circle cx="6" cy="6" r="4" fill="#60a5fa"/>
+      <text x="18" y="10" fill="#e2e8f0" font-size="12" font-family="sans-serif">ចាប់ផ្តើមលើ **បន្ទាត់ថ្មី** (New Line) ជានិច្ច</text>
+
+      <circle cx="6" cy="32" r="4" fill="#60a5fa"/>
+      <text x="18" y="36" fill="#e2e8f0" font-size="12" font-family="sans-serif">ពង្រីក **ទទឹងពេញ ១០០%** នៃ Parent</text>
+
+      <circle cx="6" cy="58" r="4" fill="#60a5fa"/>
+      <text x="18" y="62" fill="#e2e8f0" font-size="12" font-family="sans-serif">អាចកំណត់ `width`, `height`, `margin` បានគ្រប់ជ្រុង</text>
+
+      <circle cx="6" cy="84" r="4" fill="#60a5fa"/>
+      <text x="18" y="88" fill="#93c5fd" font-size="12" font-family="monospace">ឧទាហរណ៍: &lt;div&gt;, &lt;p&gt;, &lt;h1&gt;-&lt;h6&gt;, &lt;ul&gt;, &lt;form&gt;</text>
+    </g>
+  </g>
+
+  <!-- Right Card: Inline Elements -->
+  <g transform="translate(445, 95)" filter="url(#shadow)">
+    <rect width="365" height="350" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect x="0" y="0" width="365" height="45" rx="12" fill="#10b981"/>
+    <rect x="0" y="30" width="365" height="15" fill="#10b981"/>
+    <text x="182" y="28" fill="#ffffff" font-size="16" font-family="sans-serif" font-weight="bold" text-anchor="middle">🏷️ Inline Elements</text>
+
+    <!-- Visual Browser Canvas Simulation -->
+    <rect x="15" y="60" width="335" height="145" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    
+    <!-- Flow text with inline elements -->
+    <text x="25" y="85" fill="#94a3b8" font-size="12" font-family="sans-serif">នៅក្នុងបន្ទាត់តែមួយ (In the same line):</text>
+
+    <!-- Inline 1: span -->
+    <rect x="25" y="98" width="95" height="30" rx="4" fill="url(#inlineGrad)"/>
+    <text x="72" y="118" fill="#ffffff" font-size="11" font-family="monospace" text-anchor="middle">&lt;span&gt;</text>
+
+    <!-- Inline 2: strong -->
+    <rect x="126" y="98" width="105" height="30" rx="4" fill="url(#inlineGrad)"/>
+    <text x="178" y="118" fill="#ffffff" font-size="11" font-family="monospace" text-anchor="middle">&lt;strong&gt;</text>
+
+    <!-- Inline 3: a -->
+    <rect x="237" y="98" width="90" height="30" rx="4" fill="url(#inlineGrad)"/>
+    <text x="282" y="118" fill="#ffffff" font-size="11" font-family="monospace" text-anchor="middle">&lt;a href&gt;</text>
+
+    <!-- Inline 4: em -->
+    <rect x="25" y="136" width="75" height="30" rx="4" fill="url(#inlineGrad)"/>
+    <text x="62" y="156" fill="#ffffff" font-size="11" font-family="monospace" text-anchor="middle">&lt;em&gt;</text>
+
+    <!-- Inline 5: button/badge -->
+    <rect x="106" y="136" width="100" height="30" rx="4" fill="url(#inlineGrad)"/>
+    <text x="156" y="156" fill="#ffffff" font-size="11" font-family="monospace" text-anchor="middle">&lt;button&gt;</text>
+
+    <text x="215" y="156" fill="#64748b" font-size="11" font-family="sans-serif">តម្រៀបបន្តកន្ទុយគ្នា...</text>
+
+    <!-- Bullet points -->
+    <g transform="translate(20, 220)">
+      <circle cx="6" cy="6" r="4" fill="#34d399"/>
+      <text x="18" y="10" fill="#e2e8f0" font-size="12" font-family="sans-serif">**មិនចុះបន្ទាត់ថ្មីទេ** (ស្ថិតក្នុងលំហូរអត្ថបទ)</text>
+
+      <circle cx="6" cy="32" r="4" fill="#34d399"/>
+      <text x="18" y="36" fill="#e2e8f0" font-size="12" font-family="sans-serif">យកទំហំ **ល្មមតែតាម Content** ខាងក្នុងប៉ុណ្ណោះ</text>
+
+      <circle cx="6" cy="58" r="4" fill="#34d399"/>
+      <text x="18" y="62" fill="#e2e8f0" font-size="12" font-family="sans-serif">**មិនអាច** កំណត់ `width` &amp; `height` ផ្ទាល់បានឡើយ</text>
+
+      <circle cx="6" cy="84" r="4" fill="#34d399"/>
+      <text x="18" y="88" fill="#6ee7b7" font-size="12" font-family="monospace">ឧទាហរណ៍: &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;img&gt;</text>
+    </g>
+  </g>
+</svg>

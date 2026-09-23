@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" width="100%" height="100%">
+  <rect width="800" height="280" rx="12" fill="#0f172a" />
+  <text x="400" y="38" font-family="'Kantumruy Pro', sans-serif" font-size="18" fill="#38bdf8" text-anchor="middle" font-weight="bold">
+    🔍 រចនាសម្ព័ន្ធនៃ HTML Attribute (Attribute Syntax Breakdown)
+  </text>
+
+  <!-- Tag Container -->
+  <rect x="50" y="65" width="700" height="80" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2" />
+  
+  <text x="70" y="115" font-family="'Fira Code', monospace" font-size="24" font-weight="bold">
+    <tspan fill="#94a3b8">&lt;</tspan><tspan fill="#38bdf8">a</tspan>
+    <tspan fill="#f59e0b"> href</tspan><tspan fill="#94a3b8">=</tspan><tspan fill="#4ade80">"https://example.com"</tspan>
+    <tspan fill="#f59e0b"> target</tspan><tspan fill="#94a3b8">=</tspan><tspan fill="#4ade80">"_blank"</tspan><tspan fill="#94a3b8">&gt;</tspan>
+    <tspan fill="#ffffff">ចុចទីនេះ</tspan><tspan fill="#94a3b8">&lt;/</tspan><tspan fill="#38bdf8">a</tspan><tspan fill="#94a3b8">&gt;</tspan>
+  </text>
+
+  <!-- Pointers -->
+  <!-- Attribute 1 Name -->
+  <path d="M 140 145 L 140 190" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4,4" />
+  <rect x="80" y="190" width="120" height="32" rx="6" fill="#d97706" />
+  <text x="140" y="211" font-family="'Kantumruy Pro', sans-serif" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">Attribute Name</text>
+
+  <!-- Attribute 1 Value -->
+  <path d="M 280 145 L 280 190" stroke="#4ade80" stroke-width="2" stroke-dasharray="4,4" />
+  <rect x="220" y="190" width="120" height="32" rx="6" fill="#16a34a" />
+  <text x="280" y="211" font-family="'Kantumruy Pro', sans-serif" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">Attribute Value</text>
+
+  <!-- Attribute 2 Pair -->
+  <path d="M 500 145 L 500 190" stroke="#c084fc" stroke-width="2" stroke-dasharray="4,4" />
+  <rect x="430" y="190" width="140" height="32" rx="6" fill="#9333ea" />
+  <text x="500" y="211" font-family="'Kantumruy Pro', sans-serif" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">Name/Value Pair 2</text>
+
+  <text x="400" y="255" font-family="'Kantumruy Pro', sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">
+    💡 Attribute តែងតែស្ថិតនៅក្នុង Opening Tag ជានិច្ច ដោយមានឈ្មោះ (Name) និងតម្លៃ (Value ក្នុងសញ្ញាសម្រង់ "")
+  </text>
+</svg>

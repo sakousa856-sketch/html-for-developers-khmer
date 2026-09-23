@@ -6,6 +6,8 @@
 
 ## ១. គ្រឹះនៃ Responsive Design: Setting The Viewport
 
+![HTML Responsive Layout and Viewport](../assets/html-responsive-viewport.svg)
+
 ដើម្បីឱ្យគេហទំព័រ Support Responsive Design យើងត្រូវតែដាក់ Meta Viewport នៅក្នុង `<head>`៖
 
 ```html

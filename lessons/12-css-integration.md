@@ -6,6 +6,8 @@
 
 ## ១. វិធីទាំង ៣ ក្នុងការបញ្ចូល CSS ទៅក្នុង HTML (3 Ways to Add CSS)
 
+![3 Ways to Add CSS in HTML](../assets/html-css-3-ways.svg)
+
 យើងអាចភ្ជាប់ CSS ជាមួយ HTML តាម ៣ របៀប៖
 
 1. **Inline CSS:** សរសេរនៅក្នុង `style` attribute ផ្ទាល់លើ HTML Element

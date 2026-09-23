@@ -59,6 +59,8 @@
 
 ## ៣. ការបញ្ចូលប្រអប់តារាងចូលគ្នា (Colspan & Rowspan)
 
+![HTML Table Structure Colspan and Rowspan](../assets/html-table-structure.svg)
+
 * **`colspan="N"` (Column Span):** ពង្រីកប្រអប់មួយឱ្យក្តោបលើ N ជួរឈរ (ផ្តេក)
 * **`rowspan="N"` (Row Span):** ពង្រីកប្រអប់មួយឱ្យក្តោបលើ N ជួរដេក (ឈរ)
 

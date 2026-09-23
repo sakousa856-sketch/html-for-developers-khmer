@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="localGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="sessionGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="850" height="480" rx="16" fill="url(#bgGrad)"/>
+  
+  <!-- Title -->
+  <text x="425" y="38" fill="#ffffff" font-size="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="bold" text-anchor="middle">HTML5 Web Storage API Lifecycle</text>
+  <text x="425" y="62" fill="#94a3b8" font-size="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" text-anchor="middle">ការប្រៀបធៀបអាយុកាលទិន្នន័យរវាង localStorage និង sessionStorage</text>
+
+  <!-- Left Card: localStorage (Persistent) -->
+  <g transform="translate(40, 85)" filter="url(#shadow)">
+    <rect width="365" height="365" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect width="365" height="42" rx="12" fill="url(#localGrad)"/>
+    <rect y="30" width="365" height="12" fill="#059669"/>
+    <text x="182" y="27" fill="#ffffff" font-size="15" font-family="monospace" font-weight="bold" text-anchor="middle">💾 localStorage (អចិន្ត្រៃយ៍)</text>
+
+    <!-- Visual Lifecycle Flow -->
+    <g transform="translate(20, 55)">
+      <rect width="325" height="150" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      
+      <!-- Timeline steps -->
+      <g transform="translate(15, 20)">
+        <circle cx="12" cy="12" r="10" fill="#10b981"/>
+        <text x="12" y="16" fill="#ffffff" font-size="10" font-weight="bold" text-anchor="middle">1</text>
+        <text x="32" y="16" fill="#e2e8f0" font-size="11" font-family="sans-serif">រក្សាទុក: <tspan font-family="monospace" fill="#34d399">setItem('theme', 'dark')</tspan></text>
+      </g>
+
+      <g transform="translate(15, 60)">
+        <circle cx="12" cy="12" r="10" fill="#3b82f6"/>
+        <text x="12" y="16" fill="#ffffff" font-size="10" font-weight="bold" text-anchor="middle">2</text>
+        <text x="32" y="16" fill="#cbd5e1" font-size="11" font-family="sans-serif">បិទ Tab / បិទ Browser / បិទកុំព្យូទ័រ ❌</text>
+      </g>
+
+      <g transform="translate(15, 100)">
+        <circle cx="12" cy="12" r="10" fill="#10b981"/>
+        <text x="12" y="16" fill="#ffffff" font-size="10" font-weight="bold" text-anchor="middle">3</text>
+        <text x="32" y="16" fill="#34d399" font-size="11" font-family="sans-serif" font-weight="bold">បើកមកវិញ: ទិន្នន័យនៅដដែល! ✅</text>
+      </g>
+    </g>
+
+    <!-- Details -->
+    <g transform="translate(20, 225)" font-family="sans-serif" font-size="12">
+      <text x="0" y="15" fill="#a7f3d0">⏱️ **អាយុកាល**: គ្មានថ្ងៃផុតកំណត់ (No Expiry)</text>
+      <text x="0" y="40" fill="#a7f3d0">📦 **ទំហំផ្ទុក**: ប្រហែល **5MB - 10MB** ក្នុង ១ Domain</text>
+      <text x="0" y="65" fill="#a7f3d0">🌐 **វិសាលភាព**: ចែករំលែកឆ្លងគ្រប់ Tabs &amp; Windows</text>
+      <text x="0" y="90" fill="#6ee7b7">🎯 **ប្រើសម្រាប់**: Dark Mode, Auth Token, User Settings</text>
+    </g>
+  </g>
+
+  <!-- Right Card: sessionStorage (Temporary per tab) -->
+  <g transform="translate(445, 85)" filter="url(#shadow)">
+    <rect width="365" height="365" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect width="365" height="42" rx="12" fill="url(#sessionGrad)"/>
+    <rect y="30" width="365" height="12" fill="#d97706"/>
+    <text x="182" y="27" fill="#ffffff" font-size="15" font-family="monospace" font-weight="bold" text-anchor="middle">⏳ sessionStorage (បណ្ដោះអាសន្ន)</text>
+
+    <!-- Visual Lifecycle Flow -->
+    <g transform="translate(20, 55)">
+      <rect width="325" height="150" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      
+      <!-- Timeline steps -->
+      <g transform="translate(15, 20)">
+        <circle cx="12" cy="12" r="10" fill="#f59e0b"/>
+        <text x="12" y="16" fill="#ffffff" font-size="10" font-weight="bold" text-anchor="middle">1</text>
+        <text x="32" y="16" fill="#e2e8f0" font-size="11" font-family="sans-serif">រក្សាទុក: <tspan font-family="monospace" fill="#fbbf24">setItem('step', '2')</tspan></text>
+      </g>
+
+      <g transform="translate(15, 60)">
+        <circle cx="12" cy="12" r="10" fill="#3b82f6"/>
+        <text x="12" y="16" fill="#ffffff" font-size="10" font-weight="bold" text-anchor="middle">2</text>
+        <text x="32" y="16" fill="#cbd5e1" font-size="11" font-family="sans-serif">អ្នកប្រើប្រាស់ **បិទ Tab នោះចោល** ❌</text>
+      </g>
+
+      <g transform="translate(15, 100)">
+        <circle cx="12" cy="12" r="10" fill="#ef4444"/>
+        <text x="12" y="16" fill="#ffffff" font-size="10" font-weight="bold" text-anchor="middle">3</text>
+        <text x="32" y="16" fill="#fca5a5" font-size="11" font-family="sans-serif" font-weight="bold">បើក Tab ថ្មី: ទិន្នន័យត្រូវបានលុបបាត់! 🗑️</text>
+      </g>
+    </g>
+
+    <!-- Details -->
+    <g transform="translate(20, 225)" font-family="sans-serif" font-size="12">
+      <text x="0" y="15" fill="#fde68a">⏱️ **អាយុកាល**: បាត់បង់ភ្លាមពេល **បិទ Tab**</text>
+      <text x="0" y="40" fill="#fde68a">📦 **ទំហំផ្ទុក**: ប្រហែល **5MB**</text>
+      <text x="0" y="65" fill="#fde68a">🌐 **វិសាលភាព**: នៅតែក្នុង **Tab តែមួយគត់** (Not shared)</text>
+      <text x="0" y="90" fill="#fde047">🎯 **ប្រើសម្រាប់**: Multi-step Checkout, Session Quiz</text>
+    </g>
+  </g>
+</svg>

@@ -2,6 +2,8 @@
 
 > **គ្រប់ HTML Element ទាំងអស់សុទ្ធតែមានតម្លៃបង្ហាញលំនាំដើម (Default Display Value) ជារបៀប Block ឬ Inline។**
 
+![HTML Block vs Inline Elements](../assets/html-block-vs-inline.svg)
+
 ---
 
 ## ១. ធាតុ Block-level Elements (Block Elements)

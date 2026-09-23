@@ -6,6 +6,8 @@
 
 ## ១. របៀបដែល SSE ដំណើរការ
 
+![Polling vs SSE vs WebSockets](../assets/html-sse-vs-websockets.svg)
+
 * ក្នុងវិធីសាស្ត្រធម្មតា (Traditional Polling) Browser ត្រូវផ្ញើ Request ទៅសួរ Server រាល់ប៉ុន្មានវិនាទីម្តង ("តើមានទិន្នន័យថ្មីទេ?")។
 * ក្នុង **Server-Sent Events** Browser បើក Connection តែម្តងជាមួយ Server ហើយ Server នឹង **Push (រុញ)** ទិន្នន័យថ្មីៗមកកាន់ Browser ដោយស្វ័យប្រវត្ត រាល់ពេលមាន Updates (ដូចជា តម្លៃទីផ្សារភាគហ៊ុន ព័ត៌មានទាន់ហេតុការណ៍ ឬលទ្ធផលបាល់ទាត់)។
 

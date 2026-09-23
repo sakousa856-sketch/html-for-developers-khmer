@@ -6,6 +6,8 @@
 
 ## ១. ភាពខុសគ្នារវាង `localStorage` vs `sessionStorage`
 
+![HTML5 Web Storage API Lifecycle](../assets/html-web-storage-lifecycle.svg)
+
 | លក្ខណៈសម្បត្តិ | `window.localStorage` | `window.sessionStorage` |
 | :--- | :--- | :--- |
 | **អាយុកាលទិន្នន័យ (Expiration)** | **នៅរហូត (No Expiration)** ទោះបីជាបិទ Browser ឬបិទកុំព្យូទ័រ | **បាត់បង់ពេលបិទ Tab ឬបិទ Browser** |

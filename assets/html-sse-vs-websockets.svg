@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="850" height="480" rx="16" fill="url(#bgGrad)"/>
+  
+  <!-- Title -->
+  <text x="425" y="38" fill="#ffffff" font-size="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="bold" text-anchor="middle">Real-time Data: Polling vs SSE vs WebSockets</text>
+  <text x="425" y="62" fill="#94a3b8" font-size="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" text-anchor="middle">ការប្រៀបធៀបបច្ចេកវិទ្យាបញ្ជូនទិន្នន័យផ្ទាល់ (Real-Time Communication)</text>
+
+  <!-- Column 1: Short Polling -->
+  <g transform="translate(30, 90)" filter="url(#shadow)">
+    <rect width="245" height="355" rx="12" fill="#1e293b" stroke="#ef4444" stroke-width="1.5"/>
+    <!-- Header -->
+    <rect width="245" height="38" rx="12" fill="#ef4444"/>
+    <rect y="26" width="245" height="12" fill="#b91c1c"/>
+    <text x="122" y="24" fill="#ffffff" font-size="13" font-family="sans-serif" font-weight="bold" text-anchor="middle">🔄 Short Polling</text>
+
+    <!-- Diagram -->
+    <g transform="translate(15, 50)">
+      <text x="25" y="15" fill="#94a3b8" font-size="10" font-family="sans-serif">Client</text>
+      <text x="180" y="15" fill="#94a3b8" font-size="10" font-family="sans-serif">Server</text>
+      
+      <!-- Arrows -->
+      <path d="M 30 30 L 175 40" stroke="#f87171" stroke-width="2"/>
+      <polygon points="175,37 185,41 175,46" fill="#f87171"/>
+      
+      <path d="M 175 55 L 30 65" stroke="#94a3b8" stroke-width="2"/>
+      <polygon points="30,62 20,66 30,71" fill="#94a3b8"/>
+
+      <path d="M 30 85 L 175 95" stroke="#f87171" stroke-width="2"/>
+      <polygon points="175,92 185,96 175,101" fill="#f87171"/>
+
+      <path d="M 175 110 L 30 120" stroke="#94a3b8" stroke-width="2"/>
+      <polygon points="30,117 20,121 30,126" fill="#94a3b8"/>
+    </g>
+
+    <!-- Description -->
+    <g transform="translate(15, 195)" font-family="sans-serif" font-size="11" fill="#fca5a5">
+      <text x="0" y="15">⚠️ **សួរម្តងហើយម្តងទៀត**</text>
+      <text x="0" y="35">Client ផ្ញើ Request រៀងរាល់ 3s</text>
+      <text x="0" y="55">❌ ខាត Bandwidth &amp; Server Load</text>
+      <text x="0" y="75">⏱️ មាន Latency ខ្ពស់</text>
+    </g>
+
+    <rect x="15" y="295" width="215" height="40" rx="6" fill="#450a0a"/>
+    <text x="122" y="320" fill="#fca5a5" font-size="11" font-family="sans-serif" text-anchor="middle">❌ មិនសូវពេញនិយមបច្ចុប្បន្ន</text>
+  </g>
+
+  <!-- Column 2: Server-Sent Events (SSE) -->
+  <g transform="translate(300, 90)" filter="url(#shadow)">
+    <rect width="250" height="355" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <!-- Header -->
+    <rect width="250" height="38" rx="12" fill="#10b981"/>
+    <rect y="26" width="250" height="12" fill="#059669"/>
+    <text x="125" y="24" fill="#ffffff" font-size="13" font-family="sans-serif" font-weight="bold" text-anchor="middle">📡 Server-Sent Events (SSE)</text>
+
+    <!-- Diagram -->
+    <g transform="translate(15, 50)">
+      <text x="25" y="15" fill="#94a3b8" font-size="10" font-family="sans-serif">Client</text>
+      <text x="180" y="15" fill="#94a3b8" font-size="10" font-family="sans-serif">Server</text>
+      
+      <!-- Handshake -->
+      <path d="M 30 30 L 175 35" stroke="#34d399" stroke-width="1.5" stroke-dasharray="3 2"/>
+      <polygon points="175,32 185,35 175,38" fill="#34d399"/>
+      
+      <!-- Continuous Server Push -->
+      <path d="M 175 55 L 30 65" stroke="#10b981" stroke-width="2.5"/>
+      <polygon points="30,61 20,66 30,71" fill="#10b981"/>
+
+      <path d="M 175 85 L 30 95" stroke="#10b981" stroke-width="2.5"/>
+      <polygon points="30,91 20,96 30,101" fill="#10b981"/>
+
+      <path d="M 175 115 L 30 125" stroke="#10b981" stroke-width="2.5"/>
+      <polygon points="30,121 20,126 30,131" fill="#10b981"/>
+    </g>
+
+    <!-- Description -->
+    <g transform="translate(15, 195)" font-family="sans-serif" font-size="11" fill="#a7f3d0">
+      <text x="0" y="15">✅ **One-Way (Server ➔ Client)**</text>
+      <text x="0" y="35">បើក 1 HTTP Connection រួច Stream</text>
+      <text x="0" y="55">🔄 Auto-reconnect ដោយស្វ័យប្រវត្តិ</text>
+      <text x="0" y="75">🎯 Stock Price, News, Live Feeds</text>
+    </g>
+
+    <rect x="15" y="295" width="220" height="40" rx="6" fill="#064e3b"/>
+    <text x="125" y="320" fill="#6ee7b7" font-size="11" font-family="monospace" text-anchor="middle">new EventSource('/events')</text>
+  </g>
+
+  <!-- Column 3: WebSockets -->
+  <g transform="translate(575, 90)" filter="url(#shadow)">
+    <rect width="245" height="355" rx="12" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+    <!-- Header -->
+    <rect width="245" height="38" rx="12" fill="#8b5cf6"/>
+    <rect y="26" width="245" height="12" fill="#6d28d9"/>
+    <text x="122" y="24" fill="#ffffff" font-size="13" font-family="sans-serif" font-weight="bold" text-anchor="middle">⚡ WebSockets</text>
+
+    <!-- Diagram -->
+    <g transform="translate(15, 50)">
+      <text x="25" y="15" fill="#94a3b8" font-size="10" font-family="sans-serif">Client</text>
+      <text x="180" y="15" fill="#94a3b8" font-size="10" font-family="sans-serif">Server</text>
+      
+      <!-- Bi-directional arrows -->
+      <path d="M 30 40 L 175 40" stroke="#c084fc" stroke-width="2"/>
+      <polygon points="175,36 185,40 175,44" fill="#c084fc"/>
+      
+      <path d="M 175 70 L 30 70" stroke="#a855f7" stroke-width="2"/>
+      <polygon points="30,66 20,70 30,74" fill="#a855f7"/>
+
+      <path d="M 30 100 L 175 100" stroke="#c084fc" stroke-width="2"/>
+      <polygon points="175,96 185,100 175,104" fill="#c084fc"/>
+
+      <path d="M 175 130 L 30 130" stroke="#a855f7" stroke-width="2"/>
+      <polygon points="30,126 20,130 30,134" fill="#a855f7"/>
+    </g>
+
+    <!-- Description -->
+    <g transform="translate(15, 195)" font-family="sans-serif" font-size="11" fill="#d8b4fe">
+      <text x="0" y="15">⚡ **Two-Way (Client ⇄ Server)**</text>
+      <text x="0" y="35">Full-Duplex TCP Connection</text>
+      <text x="0" y="55">🚀 ល្បឿនលឿនបំផុត (Ultra Low Latency)</text>
+      <text x="0" y="75">🎯 Multiplayer Game, Chat App</text>
+    </g>
+
+    <rect x="15" y="295" width="215" height="40" rx="6" fill="#3b0764"/>
+    <text x="122" y="320" fill="#e9d5ff" font-size="11" font-family="monospace" text-anchor="middle">new WebSocket('wss://...')</text>
+  </g>
+</svg>

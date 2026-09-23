@@ -2,6 +2,8 @@
 
 > **`class` និង `id` គឺជា Global Attributes ដែលប្រើសម្រាប់កំណត់អត្តសញ្ញាណ Element ដើម្បីភ្ជាប់ជាមួយ CSS Styling និង JavaScript Manipulation។**
 
+![HTML Class vs ID](../assets/html-class-vs-id.svg)
+
 ---
 
 ## ១. Attribute `class` (អាចប្រើម្តងហើយម្តងទៀតបាន)

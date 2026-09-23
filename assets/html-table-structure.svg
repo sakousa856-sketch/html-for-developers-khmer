@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="thGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="colspanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+    <linearGradient id="rowspanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#be185d"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="850" height="480" rx="16" fill="url(#bgGrad)"/>
+  
+  <!-- Title -->
+  <text x="425" y="42" fill="#ffffff" font-size="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="bold" text-anchor="middle">HTML Table Structure: Rowspan &amp; Colspan</text>
+  <text x="425" y="66" fill="#94a3b8" font-size="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" text-anchor="middle">រចនាសម្ព័ន្ធតារាង &amp; ការបូកក្រឡា (Merge Cells) ក្នុង HTML</text>
+
+  <!-- Table Container (Mockup Table) -->
+  <g transform="translate(60, 95)" filter="url(#cardShadow)">
+    <rect width="730" height="340" rx="12" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+
+    <!-- Thead Section -->
+    <!-- TH Row 1 -->
+    <rect x="20" y="20" width="220" height="50" rx="6" fill="url(#thGrad)"/>
+    <text x="130" y="45" fill="#ffffff" font-size="15" font-family="monospace" font-weight="bold" text-anchor="middle">&lt;th&gt; Name &lt;/th&gt;</text>
+    <text x="130" y="61" fill="#bfdbfe" font-size="11" font-family="sans-serif" text-anchor="middle">ឈ្មោះសិស្ស</text>
+
+    <!-- Colspan Demo: colspan="2" -->
+    <rect x="250" y="20" width="460" height="50" rx="6" fill="url(#colspanGrad)" stroke="#c4b5fd" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <text x="480" y="43" fill="#ffffff" font-size="15" font-family="monospace" font-weight="bold" text-anchor="middle">&lt;th colspan="2"&gt; Contact Info &lt;/th&gt;</text>
+    <text x="480" y="61" fill="#ede9fe" font-size="11" font-family="sans-serif" text-anchor="middle">🔗 Merge 2 ជួរឈរ (Columns) ផ្ដេកចូលគ្នា</text>
+
+    <!-- Sub Header Row (under Contact Info) -->
+    <rect x="20" y="78" width="220" height="42" rx="6" fill="#334155"/>
+    <text x="130" y="104" fill="#cbd5e1" font-size="13" font-family="monospace" text-anchor="middle">&lt;td&gt; Student &lt;/td&gt;</text>
+
+    <rect x="250" y="78" width="225" height="42" rx="6" fill="#334155"/>
+    <text x="362" y="104" fill="#cbd5e1" font-size="13" font-family="monospace" text-anchor="middle">&lt;th&gt; Email &lt;/th&gt;</text>
+
+    <rect x="485" y="78" width="225" height="42" rx="6" fill="#334155"/>
+    <text x="597" y="104" fill="#cbd5e1" font-size="13" font-family="monospace" text-anchor="middle">&lt;th&gt; Phone &lt;/th&gt;</text>
+
+    <!-- Data Row 1 & Rowspan Demo: rowspan="2" -->
+    <!-- Rowspan Cell -->
+    <rect x="20" y="128" width="220" height="110" rx="6" fill="url(#rowspanGrad)" stroke="#fbcfe8" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <text x="130" y="175" fill="#ffffff" font-size="14" font-family="monospace" font-weight="bold" text-anchor="middle">&lt;td rowspan="2"&gt; Sokha &lt;/td&gt;</text>
+    <text x="130" y="198" fill="#fce7f3" font-size="11" font-family="sans-serif" text-anchor="middle">⬇️ Merge 2 ជួរដេក (Rows) បញ្ឈរ</text>
+
+    <!-- Row 1 cells -->
+    <rect x="250" y="128" width="225" height="50" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="362" y="158" fill="#93c5fd" font-size="13" font-family="monospace" text-anchor="middle">sokha@mail.com</text>
+
+    <rect x="485" y="128" width="225" height="50" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="597" y="158" fill="#93c5fd" font-size="13" font-family="monospace" text-anchor="middle">012 345 678 (Primary)</text>
+
+    <!-- Row 2 cells (Sokha second contact) -->
+    <rect x="250" y="188" width="225" height="50" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="362" y="218" fill="#94a3b8" font-size="13" font-family="monospace" text-anchor="middle">sokha.work@org.kh</text>
+
+    <rect x="485" y="188" width="225" height="50" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="597" y="218" fill="#94a3b8" font-size="13" font-family="monospace" text-anchor="middle">098 765 432 (Office)</text>
+
+    <!-- Row 3 regular -->
+    <rect x="20" y="248" width="220" height="50" rx="6" fill="#334155"/>
+    <text x="130" y="278" fill="#f8fafc" font-size="14" font-family="monospace" text-anchor="middle">Bopha</text>
+
+    <rect x="250" y="248" width="225" height="50" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="362" y="278" fill="#93c5fd" font-size="13" font-family="monospace" text-anchor="middle">bopha@gmail.com</text>
+
+    <rect x="485" y="248" width="225" height="50" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="597" y="278" fill="#93c5fd" font-size="13" font-family="monospace" text-anchor="middle">088 111 222</text>
+
+    <!-- Legend Footer -->
+    <g transform="translate(40, 310)">
+      <circle cx="10" cy="8" r="6" fill="#8b5cf6"/>
+      <text x="24" y="12" fill="#cbd5e1" font-size="12" font-family="sans-serif">colspan = ពង្រីកផ្ដេក (Merge Columns)</text>
+      
+      <circle cx="280" cy="8" r="6" fill="#ec4899"/>
+      <text x="294" y="12" fill="#cbd5e1" font-size="12" font-family="sans-serif">rowspan = ពង្រីកបញ្ឈរ (Merge Rows)</text>
+
+      <circle cx="530" cy="8" r="6" fill="#3b82f6"/>
+      <text x="544" y="12" fill="#cbd5e1" font-size="12" font-family="sans-serif">&lt;th&gt; = ក្បាលតារាង (Bold/Center)</text>
+    </g>
+  </g>
+</svg>
