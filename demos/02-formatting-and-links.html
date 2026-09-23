@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>កូដគំរូ 02: ទម្រង់អត្ថបទ និងតំណភ្ជាប់ (Formatting & Links)</title>
+  <style>
+    body {
+      font-family: 'Kantumruy Pro', 'Inter', system-ui, sans-serif;
+      line-height: 1.6;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f1f5f9;
+      color: #334155;
+    }
+    .container {
+      background: white;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    h1 { color: #0f766e; }
+    h2 { color: #1e293b; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; margin-top: 24px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+    .box { background: #f8fafc; padding: 16px; border-radius: 8px; border: 1px solid #cbd5e1; }
+    a { color: #2563eb; text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; color: #1d4ed8; }
+    code { background: #e2e8f0; padding: 2px 6px; border-radius: 4px; color: #c026d3; }
+    blockquote {
+      margin: 16px 0;
+      padding: 12px 20px;
+      background: #f0fdf4;
+      border-left: 5px solid #22c55e;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>📝 ទម្រង់អត្ថបទ និងតំណភ្ជាប់ (Text Formatting & Links)</h1>
+    <p>កូដគំរូនេះបង្ហាញពីការប្រើប្រាស់ Formatting Tags, Quotations, Colors និង Hyperlinks ក្នុង HTML5។</p>
+
+    <h2>១. ធាតុទម្រង់អត្ថបទ (Text Formatting Elements)</h2>
+    <div class="grid">
+      <div class="box">
+        <p><b>អក្សរដិត (Bold):</b> <code>&lt;b&gt;</code> អត្ថបទដិតធម្មតា</p>
+        <p><strong>អក្សរដិតសំខាន់ (Strong):</strong> <code>&lt;strong&gt;</code> អត្ថបទមានទម្ងន់សំខាន់</p>
+        <p><i>អក្សរទ្រេត (Italic):</i> <code>&lt;i&gt;</code> អក្សរទ្រេត</p>
+        <p><em>អក្សរសង្កត់សំឡេង (Emphasized):</em> <code>&lt;em&gt;</code> សង្កត់សំឡេង</p>
+        <p><mark>អក្សរ Highlight (Mark):</mark> <code>&lt;mark&gt;</code> ពណ៌លឿងស្រាល</p>
+      </div>
+      <div class="box">
+        <p><small>អក្សរតូច (Small text):</small> <code>&lt;small&gt;</code> ស័ក្តិសមសម្រាប់ Copyright</p>
+        <p><del>អក្សរគូសចោល (Deleted):</del> <code>&lt;del&gt;</code> តម្លៃចាស់ $100</p>
+        <p><ins>អក្សរបញ្ចូលថ្មី (Inserted):</ins> <code>&lt;ins&gt;</code> តម្លៃថ្មី $80</p>
+        <p>អក្សរក្រោម (Subscript): H<sub>2</sub>O (រូបមន្តទឹក)</p>
+        <p>អក្សរលើ (Superscript): E = mc<sup>2</sup> ឬ X<sup>2</sup> + Y<sup>2</sup></p>
+      </div>
+    </div>
+
+    <h2>២. សម្រង់សម្តី និងការបញ្ជាក់ប្រភព (Quotations & Citations)</h2>
+    <blockquote>
+      "The best way to predict the future is to invent it."
+      <footer>— <cite>Alan Kay</cite></footer>
+    </blockquote>
+    <p>ពាក្យកាត់៖ <abbr title="HyperText Markup Language">HTML</abbr> គឺជាភាសាស្តង់ដារគេហទំព័រ។</p>
+
+    <h2>៣. តំណភ្ជាប់ Hyperlink (HTML Links)</h2>
+    <ul>
+      <li>
+        <b>Link ទៅកាន់ Website ក្រៅ (បើក Tab ថ្មី):</b><br>
+        <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">ចូលមើល W3Schools HTML Tutorial ↗</a>
+      </li>
+      <li style="margin-top: 10px;">
+        <b>Link ផ្ញើ Email (mailto):</b><br>
+        <a href="mailto:teacher@example.com?subject=សួស្តីលោកគ្រូ">ផ្ញើ Email ទៅកាន់លោកគ្រូ ✉️</a>
+      </li>
+      <li style="margin-top: 10px;">
+        <b>Link ទូរស័ព្ទ (tel):</b><br>
+        <a href="tel:+85512345678">ទូរស័ព្ទមកលេខ +855 12 345 678 📞</a>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>

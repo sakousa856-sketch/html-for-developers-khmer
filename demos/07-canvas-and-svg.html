@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>កូដគំរូ 07: ក្រាហ្វិក Canvas & SVG (HTML Graphics)</title>
+  <style>
+    body {
+      font-family: 'Kantumruy Pro', 'Inter', system-ui, sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f8fafc;
+      color: #1e293b;
+    }
+    .card {
+      background: white;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+      margin-bottom: 24px;
+    }
+    h1 { color: #059669; }
+    h2 { color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-top: 24px; }
+    .canvas-box, .svg-box {
+      background: #fafafa;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      text-align: center;
+      margin: 16px 0;
+    }
+    canvas {
+      background: white;
+      border: 2px dashed #cbd5e1;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🎨 ក្រាហ្វិកក្នុង HTML5 (Canvas vs SVG)</h1>
+    <p>មេរៀននេះបង្ហាញពីភាពខុសគ្នារវាងការគូរក្រាហ្វិកដោយប្រើ <b>HTML5 Canvas (JavaScript Pixel-based)</b> និង <b>SVG (Scalable Vector Graphics XML-based)</b>។</p>
+
+    <!-- ១. HTML5 Canvas -->
+    <h2>១. ការគូររូបលើ HTML5 Canvas (JavaScript 2D Context)</h2>
+    <div class="canvas-box">
+      <canvas id="myCanvas" width="500" height="200"></canvas>
+      <p style="font-size: 14px; color: #64748b; margin-top: 8px;">គំនូរខាងលើត្រូវបានគូរដោយកូដ JavaScript លើ Canvas Element</p>
+    </div>
+
+    <!-- ២. HTML5 SVG -->
+    <h2>២. រូបភាពវ៉ិចទ័រ Scalable Vector Graphics (SVG)</h2>
+    <div class="svg-box">
+      <svg width="500" height="150" style="background: white; border: 1px solid #e2e8f0; border-radius: 8px;">
+        <!-- រាងចតុកោណ -->
+        <rect x="30" y="30" width="90" height="90" rx="10" fill="#3b82f6" />
+        
+        <!-- រាងរង្វង់ -->
+        <circle cx="200" cy="75" r="45" fill="#10b981" />
+        
+        <!-- រាងផ្កាយ / Polygon -->
+        <polygon points="320,30 335,65 370,65 340,90 355,125 320,105 285,125 300,90 270,65 305,65" fill="#f59e0b" />
+        
+        <!-- អត្ថបទ SVG -->
+        <text x="400" y="82" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a">SVG Text</text>
+      </svg>
+      <p style="font-size: 14px; color: #64748b; margin-top: 8px;">SVG ជារូបភាព Vector មិនបែកព្រាលឡើយនៅពេល Zoom ឬពង្រីកទំហំធំ</p>
+    </div>
+  </div>
+
+  <script>
+    // ដំណើរការគូររូបលើ Canvas
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // គូរប្រអប់ចតុកោណពណ៌ខៀវ
+    ctx.fillStyle = '#0284c7';
+    ctx.fillRect(40, 40, 100, 100);
+
+    // គូររង្វង់ពណ៌បៃតង
+    ctx.beginPath();
+    ctx.arc(240, 90, 50, 0, 2 * Math.PI);
+    ctx.fillStyle = '#16a34a';
+    ctx.fill();
+
+    // សរសេរអក្សរលើ Canvas
+    ctx.font = '22px Kantumruy Pro, sans-serif';
+    ctx.fillStyle = '#e11d48';
+    ctx.fillText('សួស្តី HTML5 Canvas!', 310, 98);
+  </script>
+
+</body>
+</html>

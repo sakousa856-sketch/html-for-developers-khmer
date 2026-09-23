@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>កូដគំរូ 05: ទម្រង់ចុះឈ្មោះសិស្ស (Student Registration Form)</title>
+  <style>
+    body {
+      font-family: 'Kantumruy Pro', 'Inter', system-ui, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f1f5f9;
+      color: #1e293b;
+    }
+    .form-card {
+      background: white;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+    h1 { color: #0284c7; text-align: center; margin-top: 0; }
+    fieldset {
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      background: #fafafa;
+    }
+    legend {
+      font-weight: bold;
+      color: #0369a1;
+      padding: 0 8px;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      color: #334155;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 15px;
+      font-family: inherit;
+      box-sizing: border-box;
+      transition: border-color 0.2s;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #0284c7;
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    }
+    .radio-group, .checkbox-group {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-top: 6px;
+    }
+    .radio-group label, .checkbox-group label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 0;
+      cursor: pointer;
+    }
+    .btn-submit {
+      background: #0284c7;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.2s;
+    }
+    .btn-submit:hover {
+      background: #0369a1;
+    }
+    .btn-reset {
+      background: #e2e8f0;
+      color: #475569;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-card">
+    <h1>📝 ទម្រង់បែបបទចុះឈ្មោះសិស្សថ្មី (Student Registration)</h1>
+    <p style="text-align: center; color: #64748b; margin-bottom: 24px;">
+      ឧទាហរណ៍នៃការប្រើប្រាស់ HTML5 Form Controls, Validation Attributes និង Input Types គ្រប់ទម្រង់
+    </p>
+
+    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('ការចុះឈ្មោះទទួលបានជោគជ័យ! 🎉');">
+      
+      <!-- ផ្នែកព័ត៌មានផ្ទាល់ខ្លួន -->
+      <fieldset>
+        <legend>👤 ព័ត៌មានផ្ទាល់ខ្លួន (Personal Info)</legend>
+        
+        <div class="form-group">
+          <label for="fullname">ឈ្មោះពេញ (Full Name) <span style="color:red;">*</span>:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="ឧទាហរណ៍៖ សុខ សាន្ត" required autofocus>
+        </div>
+
+        <div class="form-group">
+          <label for="email">អ៊ីមែល (Email Address) <span style="color:red;">*</span>:</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">លេខទូរស័ព្ទ (Phone Number):</label>
+          <input type="tel" id="phone" name="phone" placeholder="012345678" pattern="[0-9]{9,10}">
+        </div>
+
+        <div class="form-group">
+          <label for="dob">ថ្ងៃខែឆ្នាំកំណើត (Date of Birth):</label>
+          <input type="date" id="dob" name="dob">
+        </div>
+
+        <div class="form-group">
+          <label>ភេទ (Gender):</label>
+          <div class="radio-group">
+            <label><input type="radio" name="gender" value="male" checked> ប្រុស (Male)</label>
+            <label><input type="radio" name="gender" value="female"> ស្រី (Female)</label>
+            <label><input type="radio" name="gender" value="other"> ផ្សេងៗ (Other)</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- ផ្នែកព័ត៌មានវគ្គសិក្សា -->
+      <fieldset>
+        <legend>💻 ជម្រើសវគ្គសិក្សា (Course Selection)</legend>
+
+        <div class="form-group">
+          <label for="course">ជ្រើសរើសវគ្គសិក្សា (Select Course):</label>
+          <select id="course" name="course">
+            <optgroup label="Frontend Development">
+              <option value="html5">HTML5 & Web Fundamentals</option>
+              <option value="css3">Modern CSS3 & Flexbox/Grid</option>
+              <option value="typescript">TypeScript & React</option>
+            </optgroup>
+            <optgroup label="Backend Development">
+              <option value="laravel">PHP & Laravel Framework</option>
+              <option value="spring">Java & Spring Boot</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="city">ទីក្រុង/ខេត្ត (Datalist Autocomplete):</label>
+          <input list="cities" id="city" name="city" placeholder="វាយឈ្មោះរាជធានី/ខេត្ត...">
+          <datalist id="cities">
+            <option value="ភ្នំពេញ (Phnom Penh)">
+            <option value="សៀមរាប (Siem Reap)">
+            <option value="បាត់ដំបង (Battambang)">
+            <option value="កំពត (Kampot)">
+            <option value="ព្រះសីហនុ (Sihanoukville)">
+          </datalist>
+        </div>
+
+        <div class="form-group">
+          <label>ជំនាញដែលធ្លាប់ចេះពីមុនមក (Prior Knowledge):</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="skills" value="html"> HTML</label>
+            <label><input type="checkbox" name="skills" value="css"> CSS</label>
+            <label><input type="checkbox" name="skills" value="js"> JavaScript</label>
+            <label><input type="checkbox" name="skills" value="git"> Git</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="bio">ចំណាប់អារម្មណ៍ ឬគោលបំណង (Student Bio / Goals):</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="សូមសរសេរពីគោលដៅក្នុងការរៀនវគ្គនេះ..."></textarea>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="btn-submit">✅ បញ្ជូនពាក្យចុះឈ្មោះ (Submit Registration)</button>
+      <button type="reset" class="btn-reset">🔄 កំណត់ឡើងវិញ (Reset Form)</button>
+    </form>
+  </div>
+
+</body>
+</html>

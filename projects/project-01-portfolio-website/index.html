@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="គេហទំព័រ Portfolio ផ្ទាល់ខ្លួនរបស់ សុខ សាន្ត - Full-Stack Web Developer">
+  <meta name="author" content="សុខ សាន្ត">
+  <title>សុខ សាន្ត | Web Developer Portfolio</title>
+  <style>
+    :root {
+      --primary: #0284c7;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --border: #e2e8f0;
+    }
+    body.dark {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Kantumruy Pro', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      border-bottom: 2px solid var(--border);
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--primary);
+      margin-bottom: 16px;
+    }
+    .section-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: var(--primary);
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+    th { background-color: var(--primary); color: white; }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      color: #64748b;
+      font-size: 14px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header & Navigation -->
+    <header>
+      <h1>👨‍💻 សុខ សាន្ត (Sok San)</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">អំពីខ្ញុំ</a></li>
+          <li><a href="#skills">ជំនាញ</a></li>
+          <li><a href="#projects">ស្នាដៃ</a></li>
+          <li><a href="#contact">ទំនាក់ទំនង</a></li>
+          <li><button onclick="toggleTheme()" style="background: none; border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; cursor: pointer; color: var(--text);">🌓 Theme</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&q=80" alt="Sok San Profile" class="profile-img">
+      <h2>សូមស្វាគមន៍មកកាន់គេហទំព័រ Portfolio របស់ខ្ញុំ</h2>
+      <p>ខ្ញុំជាអ្នកអភិវឌ្ឍន៍គេហទំព័រ (Web Developer) ដែលមានចំណង់ចំណូលចិត្តក្នុងការសាងសង់ Website ស្អាត រហ័ស និងមានប្រសិទ្ធភាពខ្ពស់។</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section-card">
+      <h2>📖 អំពីខ្ញុំ (About Me)</h2>
+      <p>
+        ខ្ញុំបានបញ្ចប់ការសិក្សាផ្នែកវិទ្យាសាស្ត្រកុំព្យូទ័រ និងមានបទពិសោធន៍ក្នុងការប្រើប្រាស់បច្ចេកវិទ្យាទំនើបៗដូចជា <b>HTML5</b>, <b>CSS3</b>, <b>JavaScript</b>, <b>PHP & Laravel</b>។
+      </p>
+      <br>
+      <blockquote style="font-style: italic; border-left: 4px solid var(--primary); padding-left: 12px;">
+        "ការសរសេរកូដមិនត្រឹមតែជាការងារនោះទេ ប៉ុន្តែវាជាសិល្បៈនៃការដោះស្រាយបញ្ហាជាក់ស្តែង។"
+      </blockquote>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-card">
+      <h2>🛠️ តារាងជំនាញបច្ចេកទេស (Technical Skills)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>បច្ចេកវិទ្យា (Technology)</th>
+            <th>កម្រិតជំនាញ (Level)</th>
+            <th>បទពិសោធន៍ (Experience)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML5 & Semantic Web</td>
+            <td>⭐⭐⭐⭐⭐ Expert</td>
+            <td>៣ ឆ្នាំ</td>
+          </tr>
+          <tr>
+            <td>CSS3 & Responsive Design</td>
+            <td>⭐⭐⭐⭐ Advanced</td>
+            <td>៣ ឆ្នាំ</td>
+          </tr>
+          <tr>
+            <td>JavaScript / TypeScript</td>
+            <td>⭐⭐⭐⭐ Advanced</td>
+            <td>២ ឆ្នាំ</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-card">
+      <h2>🚀 ស្នាដៃគម្រោងសំខាន់ៗ (Featured Projects)</h2>
+      <ul>
+        <li><b>E-Commerce Platform:</b> វេបសាយលក់ទំនិញអនឡាញពេញលេញ</li>
+        <li><b>Student Management System:</b> ប្រព័ន្ធគ្រប់គ្រងទិន្នន័យសិស្ស និងពិន្ទុ</li>
+        <li><b>News & Blog Portal:</b> គេហទំព័រព័ត៌មានបច្ចេកវិទ្យាស្វ័យប្រវត្តិ</li>
+      </ul>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="section-card">
+      <h2>✉️ ផ្ញើសារទាក់ទងមកខ្ញុំ (Contact Me)</h2>
+      <form action="#" method="POST" onsubmit="event.preventDefault(); alert('អរគុណសម្រាប់សាររបស់អ្នក! ខ្ញុំនឹងទាក់ទងត្រឡប់ទៅវិញឆាប់ៗនេះ។');">
+        <div class="form-group">
+          <label for="name">ឈ្មោះរបស់អ្នក:</label>
+          <input type="text" id="name" name="name" required placeholder="សូមវាយឈ្មោះរបស់អ្នក...">
+        </div>
+        <div class="form-group">
+          <label for="email">អ៊ីមែលរបស់អ្នក:</label>
+          <input type="email" id="email" name="email" required placeholder="example@email.com">
+        </div>
+        <div class="form-group">
+          <label for="message">ខ្លឹមសារសារ:</label>
+          <textarea id="message" name="message" rows="4" required placeholder="សរសេរសាររបស់អ្នកនៅទីនេះ..."></textarea>
+        </div>
+        <button type="submit" class="btn">បញ្ជូនសារ (Send Message)</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <address>
+        ទីតាំង៖ រាជធានីភ្នំពេញ ប្រទេសកម្ពុជា | Email: <a href="mailto:soksan@example.com">soksan@example.com</a>
+      </address>
+      <p style="margin-top: 8px;">&copy; 2026 រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ សុខ សាន្ត។</p>
+    </footer>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const isDark = document.body.classList.contains('dark');
+      localStorage.setItem('portfolio_theme', isDark ? 'dark' : 'light');
+    }
+    if (localStorage.getItem('portfolio_theme') === 'dark') {
+      document.body.classList.add('dark');
+    }
+  </script>
+
+</body>
+</html>

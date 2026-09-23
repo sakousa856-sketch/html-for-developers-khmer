@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="កាសស្តាប់ត្រចៀកឥតខ្សែ Pro Wireless Headphone - តម្លៃពិសេស">
+  <title>Pro Wireless Headphones | Angkor Shop</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Kantumruy Pro', system-ui, -apple-system, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1050px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 36px;
+      margin-bottom: 40px;
+    }
+    .main-img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+    }
+    .badge {
+      background: #ef4444;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+    h1 { font-size: 26px; color: #0f172a; margin-bottom: 10px; }
+    .price { font-size: 24px; color: #0284c7; margin: 16px 0; font-weight: bold; }
+    .price del { color: #94a3b8; font-size: 18px; margin-right: 8px; }
+    .form-group { margin-bottom: 16px; }
+    label { display: block; font-weight: 600; margin-bottom: 6px; }
+    select, input[type="number"] {
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+    .btn-buy {
+      background: #0284c7;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.2s;
+    }
+    .btn-buy:hover { background: #0369a1; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #e2e8f0;
+      text-align: left;
+    }
+    th { background: #f8fafc; }
+    @media (max-width: 768px) {
+      .product-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Breadcrumb -->
+    <nav style="font-size: 14px; color: #64748b; margin-bottom: 20px;">
+      <a href="#" style="color: #0284c7; text-decoration: none;">ទំព័រដើម</a> &gt; 
+      <a href="#" style="color: #0284c7; text-decoration: none;">ឧបករណ៍អេឡិចត្រូនិក</a> &gt; 
+      <span>កាសស្តាប់ត្រចៀក Wireless Pro</span>
+    </nav>
+
+    <!-- Product Showcase -->
+    <div class="product-grid">
+      <!-- Image Gallery -->
+      <div>
+        <img id="currentImg" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80" alt="Headphones" class="main-img">
+      </div>
+
+      <!-- Product Details & Form -->
+      <div>
+        <span class="badge">🔥 បញ្ចុះតម្លៃ 20%</span>
+        <h1>កាសស្តាប់ត្រចៀក Wireless Noise-Cancelling Pro</h1>
+        <p style="color: #f59e0b; font-size: 15px;">⭐⭐⭐⭐⭐ <span>(4.9/5 ពីការវាយតម្លៃ 128 នាក់)</span></p>
+
+        <div class="price">
+          <del>$120.00</del> <ins style="text-decoration: none;">$96.00</ins>
+        </div>
+
+        <p style="color: #475569; margin-bottom: 20px;">
+          កាសស្តាប់ត្រចៀកគុណភាពខ្ពស់ ជាមួយបច្ចេកវិទ្យាកាត់បន្ថយសំឡេងរំខាន (Active Noise Cancellation) ថ្មប្រើប្រាស់បានយូររហូតដល់ ៤០ ម៉ោង និងសម្លេងបាសបុកពិរោះរណ្តំ។
+        </p>
+
+        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('បានបញ្ចូលផលិតផលទៅក្នុងកន្ត្រកទំនិញ! 🛒');">
+          <div class="form-group">
+            <label for="colorSelect">ជ្រើសរើសពណ៌ (Color):</label>
+            <select id="colorSelect" name="color">
+              <option value="black">ពណ៌ខ្មៅរលោង (Midnight Black)</option>
+              <option value="silver">ពណ៌ប្រាក់ (Space Silver)</option>
+              <option value="navy">ពណ៌ខៀវទឹកប៊ិច (Navy Blue)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="qty">ចំនួន (Quantity):</label>
+            <input type="number" id="qty" name="quantity" value="1" min="1" max="10" style="width: 100px;">
+          </div>
+
+          <button type="submit" class="btn-buy">🛒 ដាក់ចូលកន្ត្រកទំនិញ (Add to Cart)</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Specifications Table -->
+    <section>
+      <h2>📋 លក្ខណៈបច្ចេកទេស (Specifications)</h2>
+      <table>
+        <tbody>
+          <tr>
+            <th>ប៊្លូធូស (Bluetooth)</th>
+            <td>Version 5.3 (ចម្ងាយរហូតដល់ 15 ម៉ែត្រ)</td>
+          </tr>
+          <tr>
+            <th>ថាមពលថ្ម (Battery Life)</th>
+            <td>40 ម៉ោង (ជាមួយ ANC On) / 60 ម៉ោង (ANC Off)</td>
+          </tr>
+          <tr>
+            <th>រន្ធសាកថ្ម (Charging Port)</th>
+            <td>USB Type-C Fast Charging (សាក 10 នាទី ស្តាប់បាន 5 ម៉ោង)</td>
+          </tr>
+          <tr>
+            <th>ទម្ងន់ (Weight)</th>
+            <td>250 ក្រាម</td>
+          </tr>
+          <tr>
+            <th>ការធានា (Warranty)</th>
+            <td>ធានាផ្លូវការរយៈពេល ១ ឆ្នាំពេញ</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+</body>
+</html>
