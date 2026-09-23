@@ -30,7 +30,7 @@ Attributes ភាគច្រើនត្រូវបានសរសេរជា
 ### ១. `href` Attribute (Hypertext Reference)
 ប្រើសម្រាប់កំណត់ URL គោលដៅនៃ Link:
 ```html
-<a href="https://www.w3schools.com">រៀនកូដជាមួយ W3Schools</a>
+<a href="https://www.google.com">ចូលទៅកាន់ Google</a>
 ```
 
 ### ២. `src` និង `alt` Attributes

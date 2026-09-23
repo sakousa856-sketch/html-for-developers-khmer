@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  កម្រងមេរៀននេះត្រូវបានដកស្រង់ចេញពី <b>W3Schools HTML Tutorial</b> ទាំងស្រុង ដោយបានបកប្រែពន្យល់ជាភាសាខ្មែរយ៉ាងក្បោះក្បាយ រក្សាទុកពាក្យបច្ចេកទេសជាភាសាអង់គ្លេស ១០០% មានកូដគំរូជាក់ស្តែងអាច Run បានភ្លាមៗ រូបភាពពន្យល់ក្បោះក្បាយ លំហាត់អនុវត្ត និង Capstone Projects សម្រាប់បង្រៀនសិស្ស។
+  កម្រងមេរៀននេះត្រូវបានរៀបចំ និងចងក្រងឡើងជា <b>HTML5 Master Course ស្តង់ដារពេញលេញ</b> ដោយបានពន្យល់ជាភាសាខ្មែរយ៉ាងក្បោះក្បាយ រក្សាទុកពាក្យបច្ចេកទេសជាភាសាអង់គ្លេស ១០០% មានកូដគំរូជាក់ស្តែងអាច Run បានភ្លាមៗ រូបភាព SVG Diagrams ពន្យល់ក្បោះក្បាយ លំហាត់អនុវត្ត និង Capstone Projects សម្រាប់បង្រៀនសិស្ស។
 </p>
 
 ---
@@ -158,8 +158,8 @@
 
 ---
 
-## 📜 ឯកសារយោង និងប្រភពដើម (References & Credits)
+## 📜 ឯកសារយោង និងស្តង់ដារអន្តរជាតិ (References & Standards)
 
-* 🔗 [W3Schools HTML Tutorial](https://www.w3schools.com/html/)
-* 🔗 [MDN Web Docs - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-* 🔗 [W3C HTML5 Specification](https://www.w3.org/TR/html52/)
+* 🔗 [MDN Web Docs - HTML Developer Guide](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* 🔗 [W3C HTML5 Official Specification](https://www.w3.org/TR/html52/)
+* 🔗 [WHATWG HTML Living Standard](https://html.spec.whatwg.org/)

@@ -87,7 +87,7 @@ Browser មិនបង្ហាញ Tags (`<h1>`, `<p>`) ឱ្យអ្នក�
 ---
 
 <details>
-<summary>📄 Original English Reference (W3Schools)</summary>
+<summary>📄 English Summary & Key Takeaways</summary>
 
 * HTML stands for Hyper Text Markup Language
 * HTML is the standard markup language for creating Web pages

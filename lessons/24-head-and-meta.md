@@ -36,7 +36,7 @@
 
   <!-- ៦. Open Graph Meta Tags (សម្រាប់ Share លើ Facebook / Telegram ឱ្យចេញរូប និងចំណងជើងស្អាត) -->
   <meta property="og:title" content="រៀន HTML5 ជាភាសាខ្មែរ">
-  <meta property="og:description" content="មេរៀន Web Development ដកស្រង់ពី W3Schools">
+  <meta property="og:description" content="កម្រងមេរៀន Web Development ពេញលេញជាភាសាខ្មែរ">
   <meta property="og:image" content="https://example.com/cover.jpg">
 
   <title>វគ្គសិក្សា HTML5</title>
@@ -49,11 +49,11 @@
 Tag `<base>` កំណត់ URL មូលដ្ឋានសម្រាប់រាល់ Relative Links ទាំងអស់ក្នុងទំព័រ៖
 ```html
 <head>
-  <base href="https://www.w3schools.com/images/" target="_blank">
+  <base href="https://example.com/assets/" target="_blank">
 </head>
 <body>
-  <!-- វានឹងក្លាយជា https://www.w3schools.com/images/w3html.gif ស្វ័យប្រវត្តិ -->
-  <img src="w3html.gif">
+  <!-- វានឹងក្លាយជា https://example.com/assets/logo.png ស្វ័យប្រវត្តិ -->
+  <img src="logo.png">
 </body>
 ```
 

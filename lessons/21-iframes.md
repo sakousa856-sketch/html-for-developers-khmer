@@ -51,7 +51,7 @@
 <iframe src="demo.html" name="myIframe" width="100%" height="300"></iframe>
 
 <p>
-  <a href="https://www.w3schools.com" target="myIframe">បើក W3Schools ក្នុង Iframe ខាងលើ</a>
+  <a href="https://example.com" target="myIframe">បើកគេហទំព័រក្នុង Iframe ខាងលើ</a>
 </p>
 ```
 
