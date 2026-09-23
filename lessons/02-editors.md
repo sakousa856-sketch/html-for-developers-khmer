@@ -68,67 +68,21 @@ VS Code មានមុខងារ **Emmet** ភ្ជាប់មកស្រ�
 <html lang="km">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា - ព័ត៌មានទំនាក់ទំនង</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0f172a;
-      color: #f8fafc;
-      padding: 40px 20px;
-    }
-    .card {
-      background: #1e293b;
-      border: 1px solid #334155;
-      border-radius: 12px;
-      padding: 30px;
-      max-width: 600px;
-      margin: 0 auto;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    }
-    h1 {
-      color: #38bdf8;
-      border-bottom: 2px solid #0284c7;
-      padding-bottom: 10px;
-      font-size: 24px;
-    }
-    p {
-      line-height: 1.8;
-      color: #cbd5e1;
-      font-size: 16px;
-      margin: 10px 0;
-    }
-    .badge {
-      background: #0284c7;
-      color: white;
-      padding: 3px 8px;
-      border-radius: 4px;
-      font-weight: bold;
-      font-size: 14px;
-    }
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
 <body>
 
-  <div class="card">
-    <!-- <h1> ដាក់ឈ្មោះសាលា ឬ វិទ្យាស្ថាន -->
-    <h1>🏫 វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា (Institute of Technology of Cambodia)</h1>
+  <!-- <h1> ដាក់ឈ្មោះសាលា ឬ វិទ្យាស្ថាន -->
+  <h1>🏫 វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា (Institute of Technology of Cambodia)</h1>
+  <hr>
 
-    <!-- <p> ដាក់ព័ត៌មានទំនាក់ទំនង -->
-    <p>សូមស្វាគមន៍មកកាន់គេហទំព័រផ្លូវការ! ខាងក្រោមនេះជាព័ត៌មានទំនាក់ទំនងសម្រាប់សិស្សានុសិស្ស និងសាធារណជន៖</p>
+  <!-- <p> ដាក់ព័ត៌មានទំនាក់ទំនង -->
+  <p>សូមស្វាគមន៍មកកាន់គេហទំព័រផ្លូវការ! ខាងក្រោមនេះជាព័ត៌មានទំនាក់ទំនង៖</p>
 
-    <p><span class="badge">📍 អាសយដ្ឋាន:</span> មហាវិថីសហព័ន្ធរុស្ស៊ី សង្កាត់ទឹកល្អក់១ ខណ្ឌទួលគោក រាជធានីភ្នំពេញ</p>
-    <p><span class="badge">📞 លេខទូរស័ព្ទ:</span> +855 (0) 23 880 370 / 012 345 678</p>
-    <p><span class="badge">✉️ អ៊ីមែល:</span> <a href="mailto:info@itc.edu.kh">info@itc.edu.kh</a></p>
-    <p><span class="badge">🌐 គេហទំព័រ:</span> <a href="https://www.itc.edu.kh" target="_blank">www.itc.edu.kh</a></p>
-  </div>
+  <p><b>📍 អាសយដ្ឋាន៖</b> មហាវិថីសហព័ន្ធរុស្ស៊ី សង្កាត់ទឹកល្អក់១ ខណ្ឌទួលគោក រាជធានីភ្នំពេញ</p>
+  <p><b>📞 លេខទូរស័ព្ទ៖</b> +855 (0) 23 880 370 / 012 345 678</p>
+  <p><b>✉️ អ៊ីមែល៖</b> <a href="mailto:info@itc.edu.kh">info@itc.edu.kh</a></p>
+  <p><b>🌐 គេហទំព័រ៖</b> <a href="https://www.itc.edu.kh">www.itc.edu.kh</a></p>
 
 </body>
 </html>
