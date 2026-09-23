@@ -4,6 +4,14 @@
 
 ---
 
+## 📐 ប្លង់គេហទំព័រ Semantic Layout (Visual Architecture)
+
+<p align="center">
+  <img src="../assets/html5-semantic-layout.svg" alt="HTML5 Semantic Layout Diagram" width="750" />
+</p>
+
+---
+
 ## ១. តើអ្វីជា Semantic Element? (What are Semantic Elements?)
 
 * **Non-semantic Elements:** មិនបញ្ជាក់ពីអត្ថន័យនៃមាតិកាឡើយ (ឧទាហរណ៍ `<div>` និង `<span>` គ្រាន់តែជាប្រអប់ទទេ)។

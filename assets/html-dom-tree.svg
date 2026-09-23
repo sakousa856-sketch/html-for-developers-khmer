@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="100%" height="100%">
+  <defs>
+    <style>
+      .tree-node { rx: 8px; stroke-width: 2; }
+      .node-root { fill: #fef08a; stroke: #ca8a04; }
+      .node-head { fill: #fed7aa; stroke: #ea580c; }
+      .node-body { fill: #bae6fd; stroke: #0284c7; }
+      .node-leaf { fill: #dcfce7; stroke: #16a34a; }
+      .node-text { font-family: 'Fira Code', monospace; font-size: 14px; font-weight: bold; fill: #0f172a; text-anchor: middle; }
+      .link-line { stroke: #64748b; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect width="800" height="360" rx="12" fill="#0f172a" />
+  <text x="400" y="35" font-family="'Kantumruy Pro', sans-serif" font-size="18" fill="#38bdf8" text-anchor="middle" font-weight="bold">
+    🌳 រចនាសម្ព័ន្ធដើមឈើនៃ HTML (HTML DOM Tree Structure)
+  </text>
+
+  <!-- Level 0: Document -->
+  <rect x="330" y="60" width="140" height="35" class="tree-node node-root" />
+  <text x="400" y="82" class="node-text">&lt;html&gt;</text>
+
+  <!-- Lines to Head and Body -->
+  <line x1="400" y1="95" x2="220" y2="140" class="link-line" />
+  <line x1="400" y1="95" x2="580" y2="140" class="link-line" />
+
+  <!-- Level 1: Head & Body -->
+  <rect x="150" y="140" width="140" height="35" class="tree-node node-head" />
+  <text x="220" y="162" class="node-text">&lt;head&gt;</text>
+
+  <rect x="510" y="140" width="140" height="35" class="tree-node node-body" />
+  <text x="580" y="162" class="node-text">&lt;body&gt;</text>
+
+  <!-- Lines from Head -->
+  <line x1="220" y1="175" x2="130" y2="220" class="link-line" />
+  <line x1="220" y1="175" x2="290" y2="220" class="link-line" />
+
+  <!-- Children of Head -->
+  <rect x="60" y="220" width="140" height="35" class="tree-node node-leaf" />
+  <text x="130" y="242" class="node-text">&lt;meta&gt;</text>
+
+  <rect x="220" y="220" width="140" height="35" class="tree-node node-leaf" />
+  <text x="290" y="242" class="node-text">&lt;title&gt;</text>
+
+  <!-- Lines from Body -->
+  <line x1="580" y1="175" x2="450" y2="220" class="link-line" />
+  <line x1="580" y1="175" x2="580" y2="220" class="link-line" />
+  <line x1="580" y1="175" x2="710" y2="220" class="link-line" />
+
+  <!-- Children of Body -->
+  <rect x="380" y="220" width="140" height="35" class="tree-node node-leaf" />
+  <text x="450" y="242" class="node-text">&lt;h1&gt;</text>
+
+  <rect x="530" y="220" width="100" height="35" class="tree-node node-leaf" />
+  <text x="580" y="242" class="node-text">&lt;p&gt;</text>
+
+  <rect x="650" y="220" width="120" height="35" class="tree-node node-leaf" />
+  <text x="710" y="242" class="node-text">&lt;div&gt;</text>
+
+  <!-- Explanatory note -->
+  <text x="400" y="320" font-family="'Kantumruy Pro', sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">
+    💡 Browser បម្លែងកូដ HTML ទៅជា DOM (Document Object Model) ដើម្បីបង្ហាញ និងបញ្ជាតាម JavaScript
+  </text>
+</svg>

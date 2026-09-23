@@ -9,8 +9,20 @@
 </p>
 
 <p align="center">
-  កម្រងមេរៀននេះត្រូវបានដកស្រង់ចេញពី <b>W3Schools HTML Tutorial</b> ទាំងស្រុង ដោយបានបកប្រែពន្យល់ជាភាសាខ្មែរយ៉ាងក្បោះក្បាយ រក្សាទុកពាក្យបច្ចេកទេសជាភាសាអង់គ្លេស ១០០% មានកូដគំរូជាក់ស្តែងអាច Run បានភ្លាមៗ លំហាត់អនុវត្ត និង Capstone Projects សម្រាប់បង្រៀនសិស្ស។
+  កម្រងមេរៀននេះត្រូវបានដកស្រង់ចេញពី <b>W3Schools HTML Tutorial</b> ទាំងស្រុង ដោយបានបកប្រែពន្យល់ជាភាសាខ្មែរយ៉ាងក្បោះក្បាយ រក្សាទុកពាក្យបច្ចេកទេសជាភាសាអង់គ្លេស ១០០% មានកូដគំរូជាក់ស្តែងអាច Run បានភ្លាមៗ រូបភាពពន្យល់ក្បោះក្បាយ លំហាត់អនុវត្ត និង Capstone Projects សម្រាប់បង្រៀនសិស្ស។
 </p>
+
+---
+
+## 🎭 ការប្រៀបធៀបតួនាទីរវាង HTML, CSS និង JavaScript (The Trio Analogy)
+
+<p align="center">
+  <img src="assets/html-css-js-analogy.png" alt="HTML CSS JS Analogy" width="650" style="border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" />
+</p>
+
+* 🦴 **HTML (The Skeleton - គ្រោងឆ្អឹង):** សាងសង់រចនាសម្ព័ន្ធគ្រោងឆ្អឹង និងមាតិកា (Headings, Paragraphs, Buttons, Forms, Tables)។
+* 👕 **CSS (The Skin & Clothes - ស្បែក និងសម្លៀកបំពាក់):** កំណត់ពណ៌ ស្ទីល រូបរាង ប្លង់ និងភាពស្រស់ស្អាត (Colors, Layouts, Animations)។
+* 🧠 **JavaScript (The Brain & Nerves - ខួរក្បាល និងប្រព័ន្ធប្រសាទ):** បញ្ជាចលនា Logic និងអន្តរកម្មឆ្លើយតប (Interactivity, APIs, Data Flow)។
 
 ---
 

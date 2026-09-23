@@ -4,20 +4,20 @@
 
 ---
 
+## 🔍 កាយវិភាគសាស្ត្រនៃ HTML Element (HTML Element Anatomy)
+
+<p align="center">
+  <img src="../assets/html-element-anatomy.svg" alt="HTML Element Anatomy Diagram" width="750" />
+</p>
+
+---
+
 ## ១. តើអ្វីជា HTML Element? (What is an HTML Element?)
 
 HTML Element ភាគច្រើនផ្សំឡើងដោយ ៣ ផ្នែកសំខាន់ៗ៖
 1. **Start Tag (Opening Tag):** ស្លាកបើក ដូចជា `<h1>`, `<p>`, `<div>`
 2. **Content:** ខ្លឹមសារអត្ថបទ ឬធាតុដទៃទៀតដែលនៅខាងក្នុង
 3. **End Tag (Closing Tag):** ស្លាកបិទដែលមានសញ្ញា Slash (`/`) ដូចជា `</h1>`, `</p>`, `</div>`
-
-```text
-<tagname>  មាតិកា ឬអត្ថបទ (Content)  </tagname>
-└───┬───┘  └─────────────┬──────────┘  └───┬──┘
-Start Tag             Content           End Tag
-└───────────────────────┬──────────────────────┘
-                   HTML Element
-```
 
 ### ឧទាហរណ៍ជាក់ស្តែង៖
 ```html
